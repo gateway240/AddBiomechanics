@@ -31,7 +31,7 @@ from exceptions import Error, LoadingError, TrialPreprocessingError, MarkerFitte
 
 # Global paths to the geometry and data folders.
 GEOMETRY_FOLDER_PATH = absPath('Geometry') + '/'
-DATA_FOLDER_PATH = absPath('../')
+DATA_FOLDER_PATH = absPath('../../data')
 
 # This metaclass wraps all methods in the Subject class with a try-except block, 
 # except for the __init__ method.

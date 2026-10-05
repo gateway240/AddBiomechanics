@@ -8,5 +8,5 @@ It's important to rebuild the Dockerfile each time we want to launch a new serve
 cd server
 docker build . -t add-biomechanics
 
-docker run -it -v ~/data:/root/data -v ./engine:/root/engine add-biomechanics
+docker run -it -v ~/data:/root/data -v ./:/root/app add-biomechanics
 ```

@@ -2,3 +2,5 @@ env
 .aws/credentials
 server_credentials.csv
 .DS_Store
+.cache
+.bash_history

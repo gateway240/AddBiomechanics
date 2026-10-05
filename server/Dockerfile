@@ -74,16 +74,18 @@ RUN (cd /root/opensim-core/sdk/Python && python -m build --wheel)
 # Install the generated wheel in the environment
 RUN uv pip install "$(find /root/opensim-core/sdk/Python/dist -maxdepth 1 -name '*.whl' -print -quit)"
 
-ENV LD_LIBRARY_PATH="/opensim/dependencies/install/ezc3d/lib64:/root/opensim-core/sdk/lib"
-
 # Install engine dependencies first (better caching)
-COPY ./engine/requirements.txt /root/engine/requirements.txt
-RUN uv pip install -r /root/engine/requirements.txt 
+COPY ./engine/requirements.txt /root/app/engine/requirements.txt
+RUN uv pip install -r /root/app/engine/requirements.txt 
 
 # Copy in the rest of the engine
-COPY ./engine /root/engine
+COPY ./ /root/app
 
-WORKDIR /root/engine
+WORKDIR /root/app/engine
 RUN uv pip install -e .
+
+# Update PATH for opensim
+ENV LD_LIBRARY_PATH="/opensim/dependencies/install/ezc3d/lib64:/root/opensim-core/sdk/lib"
+ENV PATH="/root/opensim-core/bin:${PATH}"
 
 CMD ["/bin/bash"]
