@@ -108,7 +108,7 @@ def classification_pass(subject: nimble.biomechanics.SubjectOnDisk):
 
     skel = subject.readSkel(0, ignoreGeometry=True)
     foot_bodies = [skel.getBodyNode(body_name) for body_name in subject.getGroundForceBodies()]
-
+    print(f"Ground Force Bodies: {subject.getGroundForceBodies()}")
     for i in range(subject.getNumTrials()):
         trial_proto = trial_protos[i]
         passes = trial_proto.getPasses()

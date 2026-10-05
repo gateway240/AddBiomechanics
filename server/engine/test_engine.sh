@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-TEST_NAME="opencap_test"
+TEST_NAME="kfb-test"
 
 CURR_DIR=`pwd`
 echo $CURR_DIR

@@ -4,7 +4,7 @@ import subprocess
 import sys
 
 def main():
-    test_name = "rajagopal2015"
+    test_name = "kfb-test"
 
     # Get current directory
     curr_dir = os.getcwd()

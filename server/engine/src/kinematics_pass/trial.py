@@ -112,6 +112,7 @@ class Trial:
             trial.frames_per_second = trc_file.framesPerSecond
             trial.marker_set = list(trc_file.markerLines.keys())
             grf_file_path = trial_path + 'grf.mot'
+            print(f"Grf file path: {grf_file_path}")
             trial.ignore_foot_not_over_force_plate = True  # .mot files do not contain force plate geometry
             if os.path.exists(grf_file_path):
                 force_plates: List[nimble.biomechanics.ForcePlate] = nimble.biomechanics.OpenSimParser.loadGRF(

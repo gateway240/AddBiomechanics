@@ -1,0 +1,24 @@
+{
+  "subjectTags": [
+    "healthy"
+  ],
+  "sex": "unknown",
+  "massKg": "67.0",
+  "heightM": "1.75",
+  "email": "alexander.beattie@gateway240.com",
+  "skeletonPreset": "custom",
+  "disableDynamics": false,
+  "footBodyNames": [
+    "calcn_r",
+    "calcn_l"
+  ],
+  "shiftGRF": false,
+  "maxTrialsToSolveMassOver": 4,
+  "runMoco": true,
+  "trialRanges": {
+    "walking": [
+      25.0,
+      30.0
+    ]
+  }
+}

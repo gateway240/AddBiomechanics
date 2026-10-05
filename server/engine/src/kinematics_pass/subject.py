@@ -316,7 +316,7 @@ class Subject(metaclass=ExceptionHandlingMeta):
     def load_trials(self, trials_folder_path: str):
         if not trials_folder_path.endswith('/'):
             trials_folder_path += '/'
-
+        print('trying to load trials')
         # Check that the trials folder exists.
         if not os.path.exists(trials_folder_path):
             raise IsADirectoryError(f'Trials folder "{trials_folder_path}" does not '
@@ -325,11 +325,13 @@ class Subject(metaclass=ExceptionHandlingMeta):
         # Check that the trials folder is not empty.
         if not os.listdir(trials_folder_path):
             raise IsADirectoryError(f'Trials folder "{trials_folder_path}" is empty.')
-
+        print('here')
         # This loads all the trials in the subject folder.
         for trial_name in os.listdir(trials_folder_path):
+            print("trial name: ", trial_name)
             # We only want to load folders, not files
             if not os.path.isdir(trials_folder_path + trial_name):
+                print("skipping")
                 continue
             trial: Trial = Trial.load_trial(
                 trial_name,
@@ -339,14 +341,18 @@ class Subject(metaclass=ExceptionHandlingMeta):
             self.trials.append(trial)
 
         # Print all errors.
+        print("Trial len: ",len(self.trials))
         for trial in self.trials:
+            print("trial: %s", trial)
+            print("Error: %s",trial.error)
             if trial.error:
                 print(f'Trial "{trial.trial_name}" has the following loading error: '
                         f'{trial.error_loading_files}')
-
+        print('here 2')
         # Check that all trials have loaded successfully.
         all_trials_have_errors = all([trial.error for trial in self.trials])
         if all_trials_have_errors:
+            print('all trials have errors')
             raise FileNotFoundError('All trials failed to load.')
 
     def load_folder(self, subject_folder: str, data_folder_path: str):
@@ -355,7 +361,9 @@ class Subject(metaclass=ExceptionHandlingMeta):
             subject_folder += '/'
         self.load_subject_json(subject_folder + '_subject.json')
         self.load_model_files(subject_folder, data_folder_path)
+        print('load_model')
         self.load_trials(subject_folder + 'trials/')
+        print('load_trials')
 
     ###################################################################################################################
     # Processing the Subject
@@ -584,7 +592,7 @@ class Subject(metaclass=ExceptionHandlingMeta):
         marker_fitter.setRegularizePelvisJointsWithVirtualSpring(0.1)
 
         # # TODO: Remove me
-        # marker_fitter.setIterationLimit(20)
+        marker_fitter.setIterationLimit(20)
 
         # 2.3. Run the kinematics pipeline.
 
@@ -617,6 +625,7 @@ class Subject(metaclass=ExceptionHandlingMeta):
             if marker_fitter.checkForFlippedMarkers(trial_segments[i].marker_observations, marker_fitter_results[i],
                                                     trial_segments[i].marker_error_report):
                 any_swapped = True
+                print(f"Error: {trial_segments[i].marker_error_report}")
                 new_marker_observations: List[Dict[str, np.ndarray]] = []
                 for t in range(trial_segments[i].marker_error_report.getNumTimesteps()):
                     new_marker_observations.append({})

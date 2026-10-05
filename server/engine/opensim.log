@@ -1,0 +1,1711 @@
+[2026-02-11 14:55:06.179] [info] Loaded model optimized_scale_and_markers from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Models/match_markers_and_physics.osim
+[2026-02-11 14:55:06.274] [info] Updating Model file from 30000 to latest format...
+[2026-02-11 14:55:06.291] [info] Loaded model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Models/unscaled_generic.osim
+[2026-02-11 14:55:06.624] [info] Loaded model optimized_scale_and_markers from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Models/match_markers_and_physics_moco.osim
+[2026-02-11 14:55:06.764] [info] 
+[2026-02-11 14:55:06.764] [info] ====================
+[2026-02-11 14:55:06.764] [info] PolynomialPathFitter
+[2026-02-11 14:55:06.764] [info] ====================
+[2026-02-11 14:55:06.764] [info] 
+[2026-02-11 14:55:06.764] [info] Step 1/9: Load the model and coordinate values table.
+[2026-02-11 14:55:06.764] [info] -----------------------------------------------------
+[2026-02-11 14:55:06.784] [info] Coordinate values table: 39 columns, 150 time points
+[2026-02-11 14:55:06.785] [info] 
+[2026-02-11 14:55:06.785] [info] Step 2/9: Set the coordinate bounds.
+[2026-02-11 14:55:06.785] [info] ------------------------------------
+[2026-02-11 14:55:06.785] [info] Global bounds: [-45, 45] degrees.
+[2026-02-11 14:55:06.785] [info] 
+[2026-02-11 14:55:06.785] [info] Step 3/9: Verify the user-defined settings.
+[2026-02-11 14:55:06.785] [info] -------------------------------------------
+[2026-02-11 14:55:06.785] [info] Number of parallel threads = 22
+[2026-02-11 14:55:06.785] [info] Number of samples per frame = 10
+[2026-02-11 14:55:06.785] [info] Latin hypercube algorithm = 'random'
+[2026-02-11 14:55:06.785] [info] Moment arm threshold = 1.0e-03 meters
+[2026-02-11 14:55:06.785] [info] Minimum polynomial order = 2
+[2026-02-11 14:55:06.785] [info] Maximum polynomial order = 5
+[2026-02-11 14:55:06.785] [info] Path length fitting tolerance = 5.0e-03 meters
+[2026-02-11 14:55:06.785] [info] Moment arm fitting tolerance = 5.0e-03 meters
+[2026-02-11 14:55:06.785] [info] Use stepwise regression = true
+[2026-02-11 14:55:06.785] [info] 
+[2026-02-11 14:55:06.785] [info] Step 4/9: Sample coordinate values around the provided trajectory.
+[2026-02-11 14:55:06.785] [info] ------------------------------------------------------------------
+[2026-02-11 14:55:07.577] [info] Set log level to Info.
+[2026-02-11 14:55:07.589] [info] Total number of samples = 1650
+[2026-02-11 14:55:07.589] [info] 
+[2026-02-11 14:55:07.589] [info] Step 5/9: Compute path lengths and moment arms.
+[2026-02-11 14:55:07.589] [info] -----------------------------------------------
+[2026-02-11 14:55:07.589] [info] Computing path lengths and moment arms for the original coordinate data...
+[2026-02-11 14:55:07.710] [info] Thread  1/22: computing values for times 0.00-5.00 seconds...
+[2026-02-11 14:55:07.714] [info] Thread  2/22: computing values for times 6.00-11.00 seconds...
+[2026-02-11 14:55:07.736] [info] Thread  3/22: computing values for times 12.00-17.00 seconds...
+[2026-02-11 14:55:07.746] [info] Thread  4/22: computing values for times 18.00-23.00 seconds...
+[2026-02-11 14:55:07.752] [info] Thread  7/22: computing values for times 36.00-41.00 seconds...
+[2026-02-11 14:55:07.754] [info] Thread  5/22: computing values for times 24.00-29.00 seconds...
+[2026-02-11 14:55:07.764] [info] Thread  6/22: computing values for times 30.00-35.00 seconds...
+[2026-02-11 14:55:07.782] [info] Thread  8/22: computing values for times 42.00-47.00 seconds...
+[2026-02-11 14:55:07.785] [info] Thread 10/22: computing values for times 54.00-59.00 seconds...
+[2026-02-11 14:55:07.792] [info] Thread  9/22: computing values for times 48.00-53.00 seconds...
+[2026-02-11 14:55:07.813] [info] Thread 12/22: computing values for times 66.00-71.00 seconds...
+[2026-02-11 14:55:07.814] [info] Thread 11/22: computing values for times 60.00-65.00 seconds...
+[2026-02-11 14:55:07.832] [info] Thread 13/22: computing values for times 72.00-77.00 seconds...
+[2026-02-11 14:55:07.839] [info] Thread 14/22: computing values for times 78.00-83.00 seconds...
+[2026-02-11 14:55:07.841] [info] Thread 15/22: computing values for times 84.00-89.00 seconds...
+[2026-02-11 14:55:07.865] [info] Thread 16/22: computing values for times 90.00-95.00 seconds...
+[2026-02-11 14:55:07.878] [info] Thread 17/22: computing values for times 96.00-101.00 seconds...
+[2026-02-11 14:55:07.892] [info] Thread 18/22: computing values for times 102.00-107.00 seconds...
+[2026-02-11 14:55:07.962] [info] Thread 19/22: computing values for times 108.00-113.00 seconds...
+[2026-02-11 14:55:07.972] [info] Thread 21/22: computing values for times 120.00-125.00 seconds...
+[2026-02-11 14:55:07.981] [info] Thread 20/22: computing values for times 114.00-119.00 seconds...
+[2026-02-11 14:55:07.996] [info] Thread 22/22: computing values for times 126.00-149.00 seconds...
+[2026-02-11 14:55:15.645] [info] 
+[2026-02-11 14:55:15.645] [info] Computing path lengths and moment arms for the sampled coordinate data...
+[2026-02-11 14:55:16.414] [info] Thread  1/22: computing values for times 0.00-6.67 seconds...
+[2026-02-11 14:55:16.420] [info] Thread  2/22: computing values for times 6.75-13.50 seconds...
+[2026-02-11 14:55:16.442] [info] Thread  3/22: computing values for times 13.58-20.33 seconds...
+[2026-02-11 14:55:16.450] [info] Thread  6/22: computing values for times 34.08-40.75 seconds...
+[2026-02-11 14:55:16.459] [info] Thread  5/22: computing values for times 27.25-34.00 seconds...
+[2026-02-11 14:55:16.460] [info] Thread  4/22: computing values for times 20.42-27.17 seconds...
+[2026-02-11 14:55:16.478] [info] Thread  8/22: computing values for times 47.67-54.42 seconds...
+[2026-02-11 14:55:16.480] [info] Thread  7/22: computing values for times 40.83-47.58 seconds...
+[2026-02-11 14:55:16.499] [info] Thread  9/22: computing values for times 54.50-61.25 seconds...
+[2026-02-11 14:55:16.507] [info] Thread 10/22: computing values for times 61.33-68.08 seconds...
+[2026-02-11 14:55:16.525] [info] Thread 12/22: computing values for times 75.00-81.67 seconds...
+[2026-02-11 14:55:16.526] [info] Thread 11/22: computing values for times 68.17-74.83 seconds...
+[2026-02-11 14:55:16.531] [info] Thread 14/22: computing values for times 88.58-95.33 seconds...
+[2026-02-11 14:55:16.534] [info] Thread 13/22: computing values for times 81.75-88.50 seconds...
+[2026-02-11 14:55:16.546] [info] Thread 15/22: computing values for times 95.42-102.17 seconds...
+[2026-02-11 14:55:16.555] [info] Thread 16/22: computing values for times 102.25-109.00 seconds...
+[2026-02-11 14:55:16.578] [info] Thread 17/22: computing values for times 109.08-115.75 seconds...
+[2026-02-11 14:55:16.583] [info] Thread 18/22: computing values for times 115.83-122.58 seconds...
+[2026-02-11 14:55:16.601] [info] Thread 19/22: computing values for times 122.67-129.42 seconds...
+[2026-02-11 14:55:16.652] [info] Thread 21/22: computing values for times 136.33-143.08 seconds...
+[2026-02-11 14:55:16.667] [info] Thread 22/22: computing values for times 143.17-149.83 seconds...
+[2026-02-11 14:55:16.862] [info] Thread 20/22: computing values for times 129.50-136.25 seconds...
+[2026-02-11 14:56:10.104] [info] 
+[2026-02-11 14:56:10.105] [info] Step 6/9: Filter the sampled path data.
+[2026-02-11 14:56:10.105] [info] ---------------------------------------
+[2026-02-11 14:56:17.590] [info] Removing 74 samples (4.5% of total) that are larger than 5 standard deviations from nominal values...
+[2026-02-11 14:56:17.736] [info] 
+[2026-02-11 14:56:17.736] [info] Step 7/9: Fit the polynomial coefficients.
+[2026-02-11 14:56:17.736] [info] ------------------------------------------
+[2026-02-11 14:56:17.737] [info] Thread  2/22: fitting coefficients for force '/forceset/addmagIsch_r'...
+[2026-02-11 14:56:17.737] [info] Thread  5/22: fitting coefficients for force '/forceset/gaslat_r'...
+[2026-02-11 14:56:17.737] [info] Thread  1/22: fitting coefficients for force '/forceset/addbrev_r'...
+[2026-02-11 14:56:17.737] [info] Thread  9/22: fitting coefficients for force '/forceset/iliacus_r'...
+[2026-02-11 14:56:17.737] [info] Thread 12/22: fitting coefficients for force '/forceset/soleus_r'...
+[2026-02-11 14:56:17.737] [info] Thread  8/22: fitting coefficients for force '/forceset/glmin2_r'...
+[2026-02-11 14:56:17.737] [info] Thread 14/22: fitting coefficients for force '/forceset/vasmed_r'...
+[2026-02-11 14:56:17.737] [info] Thread  7/22: fitting coefficients for force '/forceset/glmed2_r'...
+[2026-02-11 14:56:17.737] [info] Thread  6/22: fitting coefficients for force '/forceset/glmax2_r'...
+[2026-02-11 14:56:17.737] [info] Thread  4/22: fitting coefficients for force '/forceset/ehl_r'...
+[2026-02-11 14:56:17.737] [info] Thread 13/22: fitting coefficients for force '/forceset/tibpost_r'...
+[2026-02-11 14:56:17.737] [info] Thread 10/22: fitting coefficients for force '/forceset/piri_r'...
+[2026-02-11 14:56:17.737] [info] Thread 15/22: fitting coefficients for force '/forceset/addmagDist_l'...
+[2026-02-11 14:56:17.737] [info] Thread  3/22: fitting coefficients for force '/forceset/bflh_r'...
+[2026-02-11 14:56:17.737] [info] Thread 18/22: fitting coefficients for force '/forceset/fhl_l'...
+[2026-02-11 14:56:17.737] [info] Thread 20/22: fitting coefficients for force '/forceset/glmed1_l'...
+[2026-02-11 14:56:17.737] [info] Thread 22/22: fitting coefficients for force '/forceset/grac_l'...
+[2026-02-11 14:56:17.737] [info] Thread 11/22: fitting coefficients for force '/forceset/sart_r'...
+[2026-02-11 14:56:17.744] [info] Thread  4/22: fitting coefficients for force '/forceset/fdl_r'...
+[2026-02-11 14:56:17.746] [info] Thread 12/22: fitting coefficients for force '/forceset/tfl_r'...
+[2026-02-11 14:56:17.747] [info] Thread 13/22: fitting coefficients for force '/forceset/vasint_r'...
+[2026-02-11 14:56:17.748] [info] Thread 14/22: fitting coefficients for force '/forceset/addbrev_l'...
+[2026-02-11 14:56:17.748] [info] Thread 18/22: fitting coefficients for force '/forceset/gaslat_l'...
+[2026-02-11 14:56:17.737] [info] Thread 17/22: fitting coefficients for force '/forceset/edl_l'...
+[2026-02-11 14:56:17.737] [info] Thread 16/22: fitting coefficients for force '/forceset/addmagProx_l'...
+[2026-02-11 14:56:17.737] [info] Thread 19/22: fitting coefficients for force '/forceset/glmax1_l'...
+[2026-02-11 14:56:17.737] [info] Thread 21/22: fitting coefficients for force '/forceset/glmin1_l'...
+[2026-02-11 14:56:17.756] [info] Thread 13/22: fitting coefficients for force '/forceset/vaslat_r'...
+[2026-02-11 14:56:17.757] [info] Thread  4/22: fitting coefficients for force '/forceset/fhl_r'...
+[2026-02-11 14:56:17.771] [info] Thread 17/22: fitting coefficients for force '/forceset/ehl_l'...
+[2026-02-11 14:56:17.787] [info] Thread 17/22: fitting coefficients for force '/forceset/fdl_l'...
+[2026-02-11 14:56:17.840] [info] Thread  5/22: fitting coefficients for force '/forceset/gasmed_r'...
+[2026-02-11 14:56:17.849] [info] Thread 18/22: fitting coefficients for force '/forceset/gasmed_l'...
+[2026-02-11 14:56:18.519] [info] Thread  5/22: fitting coefficients for force '/forceset/glmax1_r'...
+[2026-02-11 14:56:19.942] [info] Thread  9/22: fitting coefficients for force '/forceset/perbrev_r'...
+[2026-02-11 14:56:19.947] [info] Thread  9/22: fitting coefficients for force '/forceset/perlong_r'...
+[2026-02-11 14:56:21.552] [info] Thread  1/22: fitting coefficients for force '/forceset/addlong_r'...
+[2026-02-11 14:56:21.849] [info] Thread 15/22: fitting coefficients for force '/forceset/addmagIsch_l'...
+[2026-02-11 14:56:22.977] [info] Thread 14/22: fitting coefficients for force '/forceset/addlong_l'...
+[2026-02-11 14:56:23.315] [info] Thread  2/22: fitting coefficients for force '/forceset/addmagMid_r'...
+[2026-02-11 14:56:26.791] [info] Thread  2/22: fitting coefficients for force '/forceset/addmagProx_r'...
+[2026-02-11 14:56:28.114] [info] Thread 16/22: fitting coefficients for force '/forceset/bflh_l'...
+[2026-02-11 14:56:28.132] [info] Thread 15/22: fitting coefficients for force '/forceset/addmagMid_l'...
+[2026-02-11 14:56:28.652] [info] Thread 10/22: fitting coefficients for force '/forceset/psoas_r'...
+[2026-02-11 14:56:29.143] [info] Thread 10/22: fitting coefficients for force '/forceset/recfem_r'...
+[2026-02-11 14:56:29.852] [info] Thread  1/22: fitting coefficients for force '/forceset/addmagDist_r'...
+[2026-02-11 14:56:37.701] [info] Thread  7/22: fitting coefficients for force '/forceset/glmed3_r'...
+[2026-02-11 14:56:42.300] [info] Thread  3/22: fitting coefficients for force '/forceset/bfsh_r'...
+[2026-02-11 14:56:42.305] [info] Thread  3/22: fitting coefficients for force '/forceset/edl_r'...
+[2026-02-11 14:56:44.674] [info] Thread 19/22: fitting coefficients for force '/forceset/glmax2_l'...
+[2026-02-11 14:56:48.014] [info] Thread  6/22: fitting coefficients for force '/forceset/glmax3_r'...
+[2026-02-11 14:56:48.241] [info] Thread 22/22: fitting coefficients for force '/forceset/iliacus_l'...
+[2026-02-11 14:56:48.447] [info] Thread  8/22: fitting coefficients for force '/forceset/glmin3_r'...
+[2026-02-11 14:56:50.115] [info] Thread 22/22: fitting coefficients for force '/forceset/perbrev_l'...
+[2026-02-11 14:56:50.119] [info] Thread 22/22: fitting coefficients for force '/forceset/perlong_l'...
+[2026-02-11 14:56:50.123] [info] Thread 22/22: fitting coefficients for force '/forceset/piri_l'...
+[2026-02-11 14:56:51.370] [info] Thread 21/22: fitting coefficients for force '/forceset/glmin2_l'...
+[2026-02-11 14:56:55.220] [info] Thread 16/22: fitting coefficients for force '/forceset/bfsh_l'...
+[2026-02-11 14:56:55.607] [info] Thread 11/22: fitting coefficients for force '/forceset/semimem_r'...
+[2026-02-11 14:56:56.329] [info] Thread 20/22: fitting coefficients for force '/forceset/glmed2_l'...
+[2026-02-11 14:56:57.196] [info] Thread 22/22: fitting coefficients for force '/forceset/psoas_l'...
+[2026-02-11 14:56:58.117] [info] Thread  8/22: fitting coefficients for force '/forceset/grac_r'...
+[2026-02-11 14:56:58.211] [info] Thread 22/22: fitting coefficients for force '/forceset/recfem_l'...
+[2026-02-11 14:56:58.412] [info] Thread  7/22: fitting coefficients for force '/forceset/glmin1_r'...
+[2026-02-11 14:56:59.043] [info] Thread 21/22: fitting coefficients for force '/forceset/glmin3_l'...
+[2026-02-11 14:57:00.003] [info] Thread 19/22: fitting coefficients for force '/forceset/glmax3_l'...
+[2026-02-11 14:57:00.986] [info] Thread 12/22: fitting coefficients for force '/forceset/tibant_r'...
+[2026-02-11 14:57:02.023] [info] Thread 20/22: fitting coefficients for force '/forceset/glmed3_l'...
+[2026-02-11 14:57:02.498] [info] Thread  6/22: fitting coefficients for force '/forceset/glmed1_r'...
+[2026-02-11 14:57:03.694] [info] Thread 11/22: fitting coefficients for force '/forceset/semiten_r'...
+[2026-02-11 14:57:03.913] [info] Thread 22/22: fitting coefficients for force '/forceset/sart_l'...
+[2026-02-11 14:57:05.593] [info] Thread 22/22: fitting coefficients for force '/forceset/semimem_l'...
+[2026-02-11 14:57:06.760] [info] Thread 22/22: fitting coefficients for force '/forceset/semiten_l'...
+[2026-02-11 14:57:08.694] [info] Thread 22/22: fitting coefficients for force '/forceset/soleus_l'...
+[2026-02-11 14:57:08.700] [info] Thread 22/22: fitting coefficients for force '/forceset/tfl_l'...
+[2026-02-11 14:57:10.352] [info] Thread 22/22: fitting coefficients for force '/forceset/tibant_l'...
+[2026-02-11 14:57:10.356] [info] Thread 22/22: fitting coefficients for force '/forceset/tibpost_l'...
+[2026-02-11 14:57:10.361] [info] Thread 22/22: fitting coefficients for force '/forceset/vasint_l'...
+[2026-02-11 14:57:10.366] [info] Thread 22/22: fitting coefficients for force '/forceset/vaslat_l'...
+[2026-02-11 14:57:10.371] [info] Thread 22/22: fitting coefficients for force '/forceset/vasmed_l'...
+[2026-02-11 14:57:10.378] [info] 
+[2026-02-11 14:57:10.378] [info] Step 8/9: Evaluate the fit.
+[2026-02-11 14:57:10.378] [info] ---------------------------
+[2026-02-11 14:57:10.378] [info] 
+[2026-02-11 14:57:10.378] [info] ---------------------------------------------------------------------
+[2026-02-11 14:57:10.378] [info]          path          |                polynomial fit               
+[2026-02-11 14:57:10.378] [info] ---------------------------------------------------------------------
+[2026-02-11 14:57:10.378] [info] /forceset/addbrev_r    | order = 5, dimension = 3, coefficients = 6
+[2026-02-11 14:57:10.378] [info] /forceset/addlong_r    | order = 5, dimension = 3, coefficients = 7
+[2026-02-11 14:57:10.378] [info] /forceset/addmagDist_r | order = 5, dimension = 3, coefficients = 7
+[2026-02-11 14:57:10.378] [info] /forceset/addmagIsch_r | order = 5, dimension = 3, coefficients = 8
+[2026-02-11 14:57:10.378] [info] /forceset/addmagMid_r  | order = 5, dimension = 3, coefficients = 5
+[2026-02-11 14:57:10.378] [info] /forceset/addmagProx_r | order = 5, dimension = 3, coefficients = 8
+[2026-02-11 14:57:10.378] [info] /forceset/bflh_r       | order = 5, dimension = 4, coefficients = 8
+[2026-02-11 14:57:10.378] [info] /forceset/bfsh_r       | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.378] [info] /forceset/edl_r        | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.378] [info] /forceset/ehl_r        | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.378] [info] /forceset/fdl_r        | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.378] [info] /forceset/fhl_r        | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.378] [info] /forceset/gaslat_r     | order = 5, dimension = 2, coefficients = 4
+[2026-02-11 14:57:10.378] [info] /forceset/gasmed_r     | order = 5, dimension = 2, coefficients = 5
+[2026-02-11 14:57:10.378] [info] /forceset/glmax1_r     | order = 5, dimension = 3, coefficients = 15
+[2026-02-11 14:57:10.378] [info] /forceset/glmax2_r     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.378] [info] /forceset/glmax3_r     | order = 5, dimension = 3, coefficients = 15
+[2026-02-11 14:57:10.378] [info] /forceset/glmed1_r     | order = 5, dimension = 3, coefficients = 15
+[2026-02-11 14:57:10.378] [info] /forceset/glmed2_r     | order = 5, dimension = 3, coefficients = 11
+[2026-02-11 14:57:10.378] [info] /forceset/glmed3_r     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.378] [info] /forceset/glmin1_r     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.378] [info] /forceset/glmin2_r     | order = 5, dimension = 3, coefficients = 13
+[2026-02-11 14:57:10.378] [info] /forceset/glmin3_r     | order = 5, dimension = 3, coefficients = 11
+[2026-02-11 14:57:10.378] [info] /forceset/grac_r       | order = 5, dimension = 4, coefficients = 8
+[2026-02-11 14:57:10.378] [info] /forceset/iliacus_r    | order = 5, dimension = 3, coefficients = 6
+[2026-02-11 14:57:10.379] [info] /forceset/perbrev_r    | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/perlong_r    | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/piri_r       | order = 5, dimension = 3, coefficients = 9
+[2026-02-11 14:57:10.379] [info] /forceset/psoas_r      | order = 5, dimension = 3, coefficients = 4
+[2026-02-11 14:57:10.379] [info] /forceset/recfem_r     | order = 5, dimension = 4, coefficients = 8
+[2026-02-11 14:57:10.379] [info] /forceset/sart_r       | order = 5, dimension = 4, coefficients = 10
+[2026-02-11 14:57:10.379] [info] /forceset/semimem_r    | order = 5, dimension = 4, coefficients = 9
+[2026-02-11 14:57:10.379] [info] /forceset/semiten_r    | order = 5, dimension = 4, coefficients = 9
+[2026-02-11 14:57:10.379] [info] /forceset/soleus_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/tfl_r        | order = 5, dimension = 4, coefficients = 13
+[2026-02-11 14:57:10.379] [info] /forceset/tibant_r     | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/tibpost_r    | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/vasint_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/vaslat_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/vasmed_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/addbrev_l    | order = 5, dimension = 3, coefficients = 7
+[2026-02-11 14:57:10.379] [info] /forceset/addlong_l    | order = 5, dimension = 3, coefficients = 8
+[2026-02-11 14:57:10.379] [info] /forceset/addmagDist_l | order = 5, dimension = 3, coefficients = 7
+[2026-02-11 14:57:10.379] [info] /forceset/addmagIsch_l | order = 5, dimension = 3, coefficients = 7
+[2026-02-11 14:57:10.379] [info] /forceset/addmagMid_l  | order = 5, dimension = 3, coefficients = 5
+[2026-02-11 14:57:10.379] [info] /forceset/addmagProx_l | order = 5, dimension = 3, coefficients = 8
+[2026-02-11 14:57:10.379] [info] /forceset/bflh_l       | order = 5, dimension = 4, coefficients = 9
+[2026-02-11 14:57:10.379] [info] /forceset/bfsh_l       | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/edl_l        | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/ehl_l        | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/fdl_l        | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/fhl_l        | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.379] [info] /forceset/gaslat_l     | order = 5, dimension = 2, coefficients = 4
+[2026-02-11 14:57:10.379] [info] /forceset/gasmed_l     | order = 5, dimension = 2, coefficients = 4
+[2026-02-11 14:57:10.379] [info] /forceset/glmax1_l     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.379] [info] /forceset/glmax2_l     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.379] [info] /forceset/glmax3_l     | order = 5, dimension = 3, coefficients = 16
+[2026-02-11 14:57:10.379] [info] /forceset/glmed1_l     | order = 5, dimension = 3, coefficients = 17
+[2026-02-11 14:57:10.379] [info] /forceset/glmed2_l     | order = 5, dimension = 3, coefficients = 11
+[2026-02-11 14:57:10.379] [info] /forceset/glmed3_l     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.379] [info] /forceset/glmin1_l     | order = 5, dimension = 3, coefficients = 14
+[2026-02-11 14:57:10.379] [info] /forceset/glmin2_l     | order = 5, dimension = 3, coefficients = 11
+[2026-02-11 14:57:10.379] [info] /forceset/glmin3_l     | order = 5, dimension = 3, coefficients = 9
+[2026-02-11 14:57:10.379] [info] /forceset/grac_l       | order = 5, dimension = 4, coefficients = 9
+[2026-02-11 14:57:10.379] [info] /forceset/iliacus_l    | order = 5, dimension = 3, coefficients = 5
+[2026-02-11 14:57:10.379] [info] /forceset/perbrev_l    | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/perlong_l    | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.379] [info] /forceset/piri_l       | order = 5, dimension = 3, coefficients = 10
+[2026-02-11 14:57:10.379] [info] /forceset/psoas_l      | order = 5, dimension = 3, coefficients = 5
+[2026-02-11 14:57:10.379] [info] /forceset/recfem_l     | order = 5, dimension = 4, coefficients = 8
+[2026-02-11 14:57:10.379] [info] /forceset/sart_l       | order = 5, dimension = 4, coefficients = 10
+[2026-02-11 14:57:10.380] [info] /forceset/semimem_l    | order = 5, dimension = 4, coefficients = 9
+[2026-02-11 14:57:10.380] [info] /forceset/semiten_l    | order = 5, dimension = 4, coefficients = 9
+[2026-02-11 14:57:10.380] [info] /forceset/soleus_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.380] [info] /forceset/tfl_l        | order = 5, dimension = 4, coefficients = 12
+[2026-02-11 14:57:10.380] [info] /forceset/tibant_l     | order = 5, dimension = 1, coefficients = 2
+[2026-02-11 14:57:10.380] [info] /forceset/tibpost_l    | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.380] [info] /forceset/vasint_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.380] [info] /forceset/vaslat_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.380] [info] /forceset/vasmed_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-11 14:57:10.380] [info] ---------------------------------------------------------------------
+[2026-02-11 14:57:10.380] [info] 
+[2026-02-11 14:57:10.380] [info] Computing path lengths and moment arms from the fitted paths...
+[2026-02-11 14:57:10.480] [info] Thread  5/22: computing values for times 24.00-29.00 seconds...
+[2026-02-11 14:57:10.483] [info] Thread  6/22: computing values for times 30.00-35.00 seconds...
+[2026-02-11 14:57:10.484] [info] Thread  2/22: computing values for times 6.00-11.00 seconds...
+[2026-02-11 14:57:10.485] [info] Thread  1/22: computing values for times 0.00-5.00 seconds...
+[2026-02-11 14:57:10.491] [info] Thread  4/22: computing values for times 18.00-23.00 seconds...
+[2026-02-11 14:57:10.492] [info] Thread  3/22: computing values for times 12.00-17.00 seconds...
+[2026-02-11 14:57:10.500] [info] Thread  9/22: computing values for times 48.00-53.00 seconds...
+[2026-02-11 14:57:10.501] [info] Thread  7/22: computing values for times 36.00-41.00 seconds...
+[2026-02-11 14:57:10.505] [info] Thread  8/22: computing values for times 42.00-47.00 seconds...
+[2026-02-11 14:57:10.514] [info] Thread 10/22: computing values for times 54.00-59.00 seconds...
+[2026-02-11 14:57:10.523] [info] Thread 11/22: computing values for times 60.00-65.00 seconds...
+[2026-02-11 14:57:10.523] [info] Thread 12/22: computing values for times 66.00-71.00 seconds...
+[2026-02-11 14:57:10.527] [info] Thread 13/22: computing values for times 72.00-77.00 seconds...
+[2026-02-11 14:57:10.536] [info] Thread 14/22: computing values for times 78.00-83.00 seconds...
+[2026-02-11 14:57:10.543] [info] Thread 15/22: computing values for times 84.00-89.00 seconds...
+[2026-02-11 14:57:10.549] [info] Thread 17/22: computing values for times 96.00-101.00 seconds...
+[2026-02-11 14:57:10.551] [info] Thread 16/22: computing values for times 90.00-95.00 seconds...
+[2026-02-11 14:57:10.557] [info] Thread 18/22: computing values for times 102.00-107.00 seconds...
+[2026-02-11 14:57:10.571] [info] Thread 19/22: computing values for times 108.00-113.00 seconds...
+[2026-02-11 14:57:10.573] [info] Thread 20/22: computing values for times 114.00-119.00 seconds...
+[2026-02-11 14:57:10.588] [info] Thread 21/22: computing values for times 120.00-125.00 seconds...
+[2026-02-11 14:57:10.588] [info] Thread 22/22: computing values for times 126.00-149.00 seconds...
+[2026-02-11 14:57:11.039] [info] Thread  2/22: computing values for times 7.08-13.42 seconds...
+[2026-02-11 14:57:11.045] [info] Thread  1/22: computing values for times 0.00-7.00 seconds...
+[2026-02-11 14:57:11.052] [info] Thread  6/22: computing values for times 32.83-39.25 seconds...
+[2026-02-11 14:57:11.052] [info] Thread  3/22: computing values for times 13.50-19.83 seconds...
+[2026-02-11 14:57:11.059] [info] Thread  8/22: computing values for times 45.75-52.75 seconds...
+[2026-02-11 14:57:11.061] [info] Thread  5/22: computing values for times 26.42-32.75 seconds...
+[2026-02-11 14:57:11.061] [info] Thread  4/22: computing values for times 20.00-26.33 seconds...
+[2026-02-11 14:57:11.068] [info] Thread  7/22: computing values for times 39.33-45.67 seconds...
+[2026-02-11 14:57:11.068] [info] Thread 10/22: computing values for times 60.42-67.25 seconds...
+[2026-02-11 14:57:11.075] [info] Thread  9/22: computing values for times 52.83-60.33 seconds...
+[2026-02-11 14:57:11.080] [info] Thread 12/22: computing values for times 74.08-80.50 seconds...
+[2026-02-11 14:57:11.082] [info] Thread 11/22: computing values for times 67.33-74.00 seconds...
+[2026-02-11 14:57:11.087] [info] Thread 13/22: computing values for times 80.58-87.08 seconds...
+[2026-02-11 14:57:11.099] [info] Thread 14/22: computing values for times 87.17-93.67 seconds...
+[2026-02-11 14:57:11.102] [info] Thread 15/22: computing values for times 93.75-100.25 seconds...
+[2026-02-11 14:57:11.118] [info] Thread 17/22: computing values for times 107.25-115.00 seconds...
+[2026-02-11 14:57:11.124] [info] Thread 16/22: computing values for times 100.33-107.17 seconds...
+[2026-02-11 14:57:11.130] [info] Thread 18/22: computing values for times 115.08-121.83 seconds...
+[2026-02-11 14:57:11.150] [info] Thread 19/22: computing values for times 122.00-128.33 seconds...
+[2026-02-11 14:57:11.157] [info] Thread 20/22: computing values for times 128.42-134.75 seconds...
+[2026-02-11 14:57:11.210] [info] Thread 21/22: computing values for times 134.83-141.25 seconds...
+[2026-02-11 14:57:11.225] [info] Thread 22/22: computing values for times 141.33-149.00 seconds...
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] Summary of path length and moment arm RMS errors
+[2026-02-11 14:57:25.677] [info] ------------------------------------------------
+[2026-02-11 14:57:25.677] [info] '/forceset/addbrev_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.140 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.250 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.379 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.424 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/addlong_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.211 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.186 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.273 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.495 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/addmagDist_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.173 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.482 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.389 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.218 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/addmagIsch_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.100 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.180 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.404 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.192 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/addmagMid_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.160 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.313 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.439 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.437 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/addmagProx_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.150 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.407 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.312 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.335 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/bflh_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.222 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_flexion_r' moment arm RMSE: 0.214 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_adduction_r' moment arm RMSE: 0.309 cm
+[2026-02-11 14:57:25.677] [info]  - 'hip_rotation_r' moment arm RMSE: 0.459 cm
+[2026-02-11 14:57:25.677] [info]  - 'knee_angle_r' moment arm RMSE: 0.329 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/bfsh_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.060 cm
+[2026-02-11 14:57:25.677] [info]  - 'knee_angle_r' moment arm RMSE: 0.346 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/edl_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.065 cm
+[2026-02-11 14:57:25.677] [info]  - 'ankle_angle_r' moment arm RMSE: 0.354 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/ehl_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.083 cm
+[2026-02-11 14:57:25.677] [info]  - 'ankle_angle_r' moment arm RMSE: 0.455 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/fdl_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.003 cm
+[2026-02-11 14:57:25.677] [info]  - 'ankle_angle_r' moment arm RMSE: 0.017 cm
+[2026-02-11 14:57:25.677] [info] 
+[2026-02-11 14:57:25.677] [info] '/forceset/fhl_r' path errors:
+[2026-02-11 14:57:25.677] [info]  - path length RMSE: 0.005 cm
+[2026-02-11 14:57:25.678] [info]  - 'ankle_angle_r' moment arm RMSE: 0.027 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/gaslat_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.130 cm
+[2026-02-11 14:57:25.678] [info]  - 'knee_angle_r' moment arm RMSE: 0.176 cm
+[2026-02-11 14:57:25.678] [info]  - 'ankle_angle_r' moment arm RMSE: 0.277 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/gasmed_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.250 cm
+[2026-02-11 14:57:25.678] [info]  - 'knee_angle_r' moment arm RMSE: 0.159 cm
+[2026-02-11 14:57:25.678] [info]  - 'ankle_angle_r' moment arm RMSE: 0.277 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmax1_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.140 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.326 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.314 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.480 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmax2_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.128 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.492 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.419 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.362 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmax3_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.132 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.370 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.487 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.344 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmed1_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.116 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.254 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.394 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.459 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmed2_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.150 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.457 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.415 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.419 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmed3_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.110 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.453 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.293 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.379 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmin1_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.166 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.441 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.456 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.489 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmin2_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.130 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.342 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.478 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.359 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/glmin3_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.111 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.370 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.288 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.401 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/grac_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.222 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.281 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.267 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.490 cm
+[2026-02-11 14:57:25.678] [info]  - 'knee_angle_r' moment arm RMSE: 0.391 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/iliacus_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.110 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.330 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.279 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.175 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/perbrev_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.049 cm
+[2026-02-11 14:57:25.678] [info]  - 'ankle_angle_r' moment arm RMSE: 0.260 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/perlong_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.038 cm
+[2026-02-11 14:57:25.678] [info]  - 'ankle_angle_r' moment arm RMSE: 0.198 cm
+[2026-02-11 14:57:25.678] [info] 
+[2026-02-11 14:57:25.678] [info] '/forceset/piri_r' path errors:
+[2026-02-11 14:57:25.678] [info]  - path length RMSE: 0.164 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_flexion_r' moment arm RMSE: 0.487 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_adduction_r' moment arm RMSE: 0.322 cm
+[2026-02-11 14:57:25.678] [info]  - 'hip_rotation_r' moment arm RMSE: 0.486 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/psoas_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.265 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_r' moment arm RMSE: 0.491 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_r' moment arm RMSE: 0.461 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_r' moment arm RMSE: 0.358 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/recfem_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.115 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_r' moment arm RMSE: 0.457 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_r' moment arm RMSE: 0.207 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_r' moment arm RMSE: 0.230 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.086 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/sart_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.177 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_r' moment arm RMSE: 0.368 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_r' moment arm RMSE: 0.411 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_r' moment arm RMSE: 0.250 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.243 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/semimem_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.137 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_r' moment arm RMSE: 0.141 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_r' moment arm RMSE: 0.212 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_r' moment arm RMSE: 0.289 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.468 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/semiten_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.159 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_r' moment arm RMSE: 0.190 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_r' moment arm RMSE: 0.324 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_r' moment arm RMSE: 0.382 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.500 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/soleus_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.044 cm
+[2026-02-11 14:57:25.679] [info]  - 'ankle_angle_r' moment arm RMSE: 0.237 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/tfl_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.184 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_r' moment arm RMSE: 0.323 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_r' moment arm RMSE: 0.462 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_r' moment arm RMSE: 0.473 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.076 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/tibant_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.077 cm
+[2026-02-11 14:57:25.679] [info]  - 'ankle_angle_r' moment arm RMSE: 0.420 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/tibpost_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.003 cm
+[2026-02-11 14:57:25.679] [info]  - 'ankle_angle_r' moment arm RMSE: 0.018 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/vasint_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.027 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.138 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/vaslat_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.040 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.191 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/vasmed_r' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.029 cm
+[2026-02-11 14:57:25.679] [info]  - 'knee_angle_r' moment arm RMSE: 0.145 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/addbrev_l' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.113 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_l' moment arm RMSE: 0.236 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_l' moment arm RMSE: 0.377 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_l' moment arm RMSE: 0.376 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/addlong_l' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.070 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_l' moment arm RMSE: 0.164 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_l' moment arm RMSE: 0.298 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_l' moment arm RMSE: 0.119 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/addmagDist_l' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.156 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_l' moment arm RMSE: 0.433 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_l' moment arm RMSE: 0.350 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_rotation_l' moment arm RMSE: 0.181 cm
+[2026-02-11 14:57:25.679] [info] 
+[2026-02-11 14:57:25.679] [info] '/forceset/addmagIsch_l' path errors:
+[2026-02-11 14:57:25.679] [info]  - path length RMSE: 0.229 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_flexion_l' moment arm RMSE: 0.217 cm
+[2026-02-11 14:57:25.679] [info]  - 'hip_adduction_l' moment arm RMSE: 0.407 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.496 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/addmagMid_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.145 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.304 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.463 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.361 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/addmagProx_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.152 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.418 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.298 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.300 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/bflh_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.155 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.254 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.341 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.213 cm
+[2026-02-11 14:57:25.680] [info]  - 'knee_angle_l' moment arm RMSE: 0.344 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/bfsh_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.041 cm
+[2026-02-11 14:57:25.680] [info]  - 'knee_angle_l' moment arm RMSE: 0.266 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/edl_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.066 cm
+[2026-02-11 14:57:25.680] [info]  - 'ankle_angle_l' moment arm RMSE: 0.368 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/ehl_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.084 cm
+[2026-02-11 14:57:25.680] [info]  - 'ankle_angle_l' moment arm RMSE: 0.465 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/fdl_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.003 cm
+[2026-02-11 14:57:25.680] [info]  - 'ankle_angle_l' moment arm RMSE: 0.017 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/fhl_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.005 cm
+[2026-02-11 14:57:25.680] [info]  - 'ankle_angle_l' moment arm RMSE: 0.026 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/gaslat_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.135 cm
+[2026-02-11 14:57:25.680] [info]  - 'knee_angle_l' moment arm RMSE: 0.161 cm
+[2026-02-11 14:57:25.680] [info]  - 'ankle_angle_l' moment arm RMSE: 0.261 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/gasmed_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.311 cm
+[2026-02-11 14:57:25.680] [info]  - 'knee_angle_l' moment arm RMSE: 0.494 cm
+[2026-02-11 14:57:25.680] [info]  - 'ankle_angle_l' moment arm RMSE: 0.261 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmax1_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.139 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.429 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.357 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.445 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmax2_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.134 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.482 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.437 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.417 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmax3_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.145 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.384 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.459 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.397 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmed1_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.106 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.252 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.438 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.349 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmed2_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.160 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.462 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.396 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.411 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmed3_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.119 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.459 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.267 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.396 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmin1_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.164 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.478 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_adduction_l' moment arm RMSE: 0.481 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_rotation_l' moment arm RMSE: 0.498 cm
+[2026-02-11 14:57:25.680] [info] 
+[2026-02-11 14:57:25.680] [info] '/forceset/glmin2_l' path errors:
+[2026-02-11 14:57:25.680] [info]  - path length RMSE: 0.174 cm
+[2026-02-11 14:57:25.680] [info]  - 'hip_flexion_l' moment arm RMSE: 0.404 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.405 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.458 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/glmin3_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.175 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.450 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.420 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.444 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/grac_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.136 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.269 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.270 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.281 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.351 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/iliacus_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.132 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.348 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.485 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.158 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/perbrev_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.047 cm
+[2026-02-11 14:57:25.681] [info]  - 'ankle_angle_l' moment arm RMSE: 0.247 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/perlong_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.036 cm
+[2026-02-11 14:57:25.681] [info]  - 'ankle_angle_l' moment arm RMSE: 0.185 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/piri_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.144 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.497 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.283 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.427 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/psoas_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.204 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.490 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.331 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.386 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/recfem_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.131 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.428 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.234 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.269 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.088 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/sart_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.152 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.472 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.249 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.279 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.231 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/semimem_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.125 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.135 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.216 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.268 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.421 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/semiten_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.152 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.187 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.339 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.371 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.452 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/soleus_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.044 cm
+[2026-02-11 14:57:25.681] [info]  - 'ankle_angle_l' moment arm RMSE: 0.222 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/tfl_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.206 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_flexion_l' moment arm RMSE: 0.382 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_adduction_l' moment arm RMSE: 0.409 cm
+[2026-02-11 14:57:25.681] [info]  - 'hip_rotation_l' moment arm RMSE: 0.497 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.372 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/tibant_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.074 cm
+[2026-02-11 14:57:25.681] [info]  - 'ankle_angle_l' moment arm RMSE: 0.411 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/tibpost_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.003 cm
+[2026-02-11 14:57:25.681] [info]  - 'ankle_angle_l' moment arm RMSE: 0.018 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/vasint_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.028 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.126 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/vaslat_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.039 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.186 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] '/forceset/vasmed_l' path errors:
+[2026-02-11 14:57:25.681] [info]  - path length RMSE: 0.028 cm
+[2026-02-11 14:57:25.681] [info]  - 'knee_angle_l' moment arm RMSE: 0.141 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] Average path length RMSE = 0.118 cm
+[2026-02-11 14:57:25.681] [info] Average moment arm RMSE  = 0.332 cm
+[2026-02-11 14:57:25.681] [info] 
+[2026-02-11 14:57:25.681] [info] Step 9/9: Print the results to the output directory.
+[2026-02-11 14:57:25.681] [info] ----------------------------------------------------
+[2026-02-11 14:57:25.681] [info] Printing the FunctionBasedPaths to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_FunctionBasedPathSet.xml'...
+[2026-02-11 14:57:25.683] [info] 
+[2026-02-11 14:57:25.683] [info] Printing original coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_coordinate_values.sto'...
+[2026-02-11 14:57:25.684] [info] Printing sampled coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_coordinate_values_sampled.sto'...
+[2026-02-11 14:57:25.696] [info] 
+[2026-02-11 14:57:25.696] [info] Printing the path lengths to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths.sto'...
+[2026-02-11 14:57:25.698] [info] Printing the moment arms to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms.sto'...
+[2026-02-11 14:57:25.706] [info] 
+[2026-02-11 14:57:25.706] [info] Printing the sampled path lengths to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths_sampled.sto'...
+[2026-02-11 14:57:25.736] [info] Printing the sampled moment arms to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms_sampled.sto'...
+[2026-02-11 14:57:25.814] [info] 
+[2026-02-11 14:57:25.814] [info] Printing the fitted path lengths from the original coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths_fitted.sto'...
+[2026-02-11 14:57:25.817] [info] Printing the fitted moment arms from the original coordinate to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms_fitted.sto'...
+[2026-02-11 14:57:25.825] [info] 
+[2026-02-11 14:57:25.825] [info] Printing the fitted path lengths from the sampled coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths_sampled_fitted.sto'...
+[2026-02-11 14:57:25.855] [info] Printing the fitted moment arms from the sampled coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms_sampled_fitted.sto'...
+[2026-02-11 15:00:10.061] [info] Loaded model optimized_scale_and_markers from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/rajagopal2015/osim_results/Moco/walk_segment_0_moco.osim
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'sacrum.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_femur.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_tibia.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_fibula.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_patella.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_talus.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_foot.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_femur.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_tibia.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_fibula.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_patella.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_talus.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_foot.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'hat_spine.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'hat_skull.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'humerus_rv.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'ulna_rv.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'radius_rv.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'pisiform_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'lunate_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'scaphoid_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'triquetrum_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'hamate_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'capitate_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'trapezoid_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'trapezium_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'metacarpal2_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'index_proximal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'index_medial_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'index_distal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'metacarpal3_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'middle_proximal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'middle_medial_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'middle_distal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'metacarpal4_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'ring_proximal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'ring_medial_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'ring_distal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'metacarpal5_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'little_proximal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'little_medial_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'little_distal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'metacarpal1_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'thumb_proximal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'thumb_distal_rvs.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'humerus_lv.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'ulna_lv.vtp'.
+[2026-02-11 15:00:10.062] [warning] Couldn't find file 'radius_lv.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'pisiform_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'lunate_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'scaphoid_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'triquetrum_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'hamate_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'capitate_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'trapezoid_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'trapezium_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'metacarpal2_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'index_proximal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'index_medial_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'index_distal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'metacarpal3_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'middle_proximal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'middle_medial_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'middle_distal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'metacarpal4_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'ring_proximal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'ring_medial_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'ring_distal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'metacarpal5_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'little_proximal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'little_medial_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'little_distal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'metacarpal1_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'thumb_proximal_lvs.vtp'.
+[2026-02-11 15:00:10.063] [warning] Couldn't find file 'thumb_distal_lvs.vtp'.
+[2026-02-11 15:00:10.071] [info] ExternalForce::ForcePlate_calcn_r Data source being set to 
+[2026-02-11 15:00:10.071] [info] ExternalForce::ForcePlate_calcn_l Data source being set to 
+[2026-02-11 15:00:10.193] [info] ExternalForce::ForcePlate_calcn_r Data source being set to 
+[2026-02-11 15:00:10.193] [info] ExternalForce::ForcePlate_calcn_l Data source being set to 
+[2026-02-18 11:34:46.300] [info] Loaded model optimized_scale_and_markers from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Models/match_markers_and_physics.osim
+[2026-02-18 11:34:46.437] [info] Loaded model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Models/unscaled_generic.osim
+[2026-02-18 11:34:46.754] [info] Loaded model optimized_scale_and_markers from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Models/match_markers_and_physics_moco.osim
+[2026-02-18 11:34:46.897] [info] 
+[2026-02-18 11:34:46.898] [info] ====================
+[2026-02-18 11:34:46.898] [info] PolynomialPathFitter
+[2026-02-18 11:34:46.898] [info] ====================
+[2026-02-18 11:34:46.898] [info] 
+[2026-02-18 11:34:46.898] [info] Step 1/9: Load the model and coordinate values table.
+[2026-02-18 11:34:46.898] [info] -----------------------------------------------------
+[2026-02-18 11:34:46.920] [info] Coordinate values table: 39 columns, 150 time points
+[2026-02-18 11:34:46.920] [info] 
+[2026-02-18 11:34:46.920] [info] Step 2/9: Set the coordinate bounds.
+[2026-02-18 11:34:46.920] [info] ------------------------------------
+[2026-02-18 11:34:46.920] [info] Global bounds: [-45, 45] degrees.
+[2026-02-18 11:34:46.921] [info] 
+[2026-02-18 11:34:46.921] [info] Step 3/9: Verify the user-defined settings.
+[2026-02-18 11:34:46.921] [info] -------------------------------------------
+[2026-02-18 11:34:46.921] [info] Number of parallel threads = 22
+[2026-02-18 11:34:46.921] [info] Number of samples per frame = 10
+[2026-02-18 11:34:46.921] [info] Latin hypercube algorithm = 'random'
+[2026-02-18 11:34:46.921] [info] Moment arm threshold = 1.0e-03 meters
+[2026-02-18 11:34:46.921] [info] Minimum polynomial order = 2
+[2026-02-18 11:34:46.921] [info] Maximum polynomial order = 5
+[2026-02-18 11:34:46.921] [info] Path length fitting tolerance = 5.0e-03 meters
+[2026-02-18 11:34:46.921] [info] Moment arm fitting tolerance = 5.0e-03 meters
+[2026-02-18 11:34:46.921] [info] Use stepwise regression = true
+[2026-02-18 11:34:46.921] [info] 
+[2026-02-18 11:34:46.921] [info] Step 4/9: Sample coordinate values around the provided trajectory.
+[2026-02-18 11:34:46.921] [info] ------------------------------------------------------------------
+[2026-02-18 11:34:47.679] [info] Set log level to Info.
+[2026-02-18 11:34:47.686] [info] Total number of samples = 1650
+[2026-02-18 11:34:47.686] [info] 
+[2026-02-18 11:34:47.686] [info] Step 5/9: Compute path lengths and moment arms.
+[2026-02-18 11:34:47.686] [info] -----------------------------------------------
+[2026-02-18 11:34:47.686] [info] Computing path lengths and moment arms for the original coordinate data...
+[2026-02-18 11:34:47.806] [info] Thread  2/22: computing values for times 6.00-11.00 seconds...
+[2026-02-18 11:34:47.808] [info] Thread  1/22: computing values for times 0.00-5.00 seconds...
+[2026-02-18 11:34:47.815] [info] Thread  3/22: computing values for times 12.00-17.00 seconds...
+[2026-02-18 11:34:47.821] [info] Thread  4/22: computing values for times 18.00-23.00 seconds...
+[2026-02-18 11:34:47.827] [info] Thread  5/22: computing values for times 24.00-29.00 seconds...
+[2026-02-18 11:34:47.842] [info] Thread  7/22: computing values for times 36.00-41.00 seconds...
+[2026-02-18 11:34:47.852] [info] Thread  6/22: computing values for times 30.00-35.00 seconds...
+[2026-02-18 11:34:47.871] [info] Thread  8/22: computing values for times 42.00-47.00 seconds...
+[2026-02-18 11:34:47.882] [info] Thread  9/22: computing values for times 48.00-53.00 seconds...
+[2026-02-18 11:34:47.890] [info] Thread 11/22: computing values for times 60.00-65.00 seconds...
+[2026-02-18 11:34:47.891] [info] Thread 10/22: computing values for times 54.00-59.00 seconds...
+[2026-02-18 11:34:47.916] [info] Thread 12/22: computing values for times 66.00-71.00 seconds...
+[2026-02-18 11:34:47.930] [info] Thread 14/22: computing values for times 78.00-83.00 seconds...
+[2026-02-18 11:34:47.951] [info] Thread 13/22: computing values for times 72.00-77.00 seconds...
+[2026-02-18 11:34:47.974] [info] Thread 15/22: computing values for times 84.00-89.00 seconds...
+[2026-02-18 11:34:47.992] [info] Thread 16/22: computing values for times 90.00-95.00 seconds...
+[2026-02-18 11:34:48.011] [info] Thread 17/22: computing values for times 96.00-101.00 seconds...
+[2026-02-18 11:34:48.016] [info] Thread 18/22: computing values for times 102.00-107.00 seconds...
+[2026-02-18 11:34:48.027] [info] Thread 19/22: computing values for times 108.00-113.00 seconds...
+[2026-02-18 11:34:48.059] [info] Thread 20/22: computing values for times 114.00-119.00 seconds...
+[2026-02-18 11:34:48.061] [info] Thread 21/22: computing values for times 120.00-125.00 seconds...
+[2026-02-18 11:34:48.066] [info] Thread 22/22: computing values for times 126.00-149.00 seconds...
+[2026-02-18 11:34:53.787] [info] 
+[2026-02-18 11:34:53.787] [info] Computing path lengths and moment arms for the sampled coordinate data...
+[2026-02-18 11:34:54.509] [info] Thread  1/22: computing values for times 0.00-6.67 seconds...
+[2026-02-18 11:34:54.523] [info] Thread  3/22: computing values for times 13.58-20.33 seconds...
+[2026-02-18 11:34:54.525] [info] Thread  2/22: computing values for times 6.75-13.50 seconds...
+[2026-02-18 11:34:54.536] [info] Thread  5/22: computing values for times 27.25-34.00 seconds...
+[2026-02-18 11:34:54.542] [info] Thread  4/22: computing values for times 20.42-27.17 seconds...
+[2026-02-18 11:34:54.556] [info] Thread  6/22: computing values for times 34.08-40.75 seconds...
+[2026-02-18 11:34:54.563] [info] Thread  9/22: computing values for times 54.50-61.25 seconds...
+[2026-02-18 11:34:54.563] [info] Thread  8/22: computing values for times 47.67-54.42 seconds...
+[2026-02-18 11:34:54.567] [info] Thread  7/22: computing values for times 40.83-47.58 seconds...
+[2026-02-18 11:34:54.585] [info] Thread 11/22: computing values for times 68.17-74.83 seconds...
+[2026-02-18 11:34:54.588] [info] Thread 10/22: computing values for times 61.33-68.08 seconds...
+[2026-02-18 11:34:54.600] [info] Thread 13/22: computing values for times 81.75-88.50 seconds...
+[2026-02-18 11:34:54.609] [info] Thread 12/22: computing values for times 75.00-81.67 seconds...
+[2026-02-18 11:34:54.614] [info] Thread 14/22: computing values for times 88.58-95.33 seconds...
+[2026-02-18 11:34:54.629] [info] Thread 15/22: computing values for times 95.42-102.17 seconds...
+[2026-02-18 11:34:54.648] [info] Thread 16/22: computing values for times 102.25-109.00 seconds...
+[2026-02-18 11:34:54.668] [info] Thread 17/22: computing values for times 109.08-115.75 seconds...
+[2026-02-18 11:34:54.681] [info] Thread 18/22: computing values for times 115.83-122.58 seconds...
+[2026-02-18 11:34:54.699] [info] Thread 19/22: computing values for times 122.67-129.42 seconds...
+[2026-02-18 11:34:54.715] [info] Thread 20/22: computing values for times 129.50-136.25 seconds...
+[2026-02-18 11:34:54.739] [info] Thread 21/22: computing values for times 136.33-143.08 seconds...
+[2026-02-18 11:34:54.763] [info] Thread 22/22: computing values for times 143.17-149.83 seconds...
+[2026-02-18 11:35:40.797] [info] 
+[2026-02-18 11:35:40.797] [info] Step 6/9: Filter the sampled path data.
+[2026-02-18 11:35:40.797] [info] ---------------------------------------
+[2026-02-18 11:35:46.923] [info] Removing 182 samples (11.0% of total) that are larger than 5 standard deviations from nominal values...
+[2026-02-18 11:35:47.113] [info] 
+[2026-02-18 11:35:47.113] [info] Step 7/9: Fit the polynomial coefficients.
+[2026-02-18 11:35:47.113] [info] ------------------------------------------
+[2026-02-18 11:35:47.114] [info] Thread  1/22: fitting coefficients for force '/forceset/addbrev_r'...
+[2026-02-18 11:35:47.114] [info] Thread  4/22: fitting coefficients for force '/forceset/ehl_r'...
+[2026-02-18 11:35:47.114] [info] Thread  5/22: fitting coefficients for force '/forceset/gaslat_r'...
+[2026-02-18 11:35:47.114] [info] Thread  2/22: fitting coefficients for force '/forceset/addmagIsch_r'...
+[2026-02-18 11:35:47.114] [info] Thread  3/22: fitting coefficients for force '/forceset/bflh_r'...
+[2026-02-18 11:35:47.114] [info] Thread 10/22: fitting coefficients for force '/forceset/piri_r'...
+[2026-02-18 11:35:47.114] [info] Thread  8/22: fitting coefficients for force '/forceset/glmin2_r'...
+[2026-02-18 11:35:47.114] [info] Thread 13/22: fitting coefficients for force '/forceset/tibpost_r'...
+[2026-02-18 11:35:47.114] [info] Thread  7/22: fitting coefficients for force '/forceset/glmed2_r'...
+[2026-02-18 11:35:47.114] [info] Thread  6/22: fitting coefficients for force '/forceset/glmax2_r'...
+[2026-02-18 11:35:47.114] [info] Thread  9/22: fitting coefficients for force '/forceset/iliacus_r'...
+[2026-02-18 11:35:47.114] [info] Thread 12/22: fitting coefficients for force '/forceset/soleus_r'...
+[2026-02-18 11:35:47.115] [info] Thread 14/22: fitting coefficients for force '/forceset/vasmed_r'...
+[2026-02-18 11:35:47.115] [info] Thread 16/22: fitting coefficients for force '/forceset/addmagProx_l'...
+[2026-02-18 11:35:47.115] [info] Thread 17/22: fitting coefficients for force '/forceset/edl_l'...
+[2026-02-18 11:35:47.115] [info] Thread 19/22: fitting coefficients for force '/forceset/glmax1_l'...
+[2026-02-18 11:35:47.115] [info] Thread 22/22: fitting coefficients for force '/forceset/grac_l'...
+[2026-02-18 11:35:47.115] [info] Thread 18/22: fitting coefficients for force '/forceset/fhl_l'...
+[2026-02-18 11:35:47.115] [info] Thread 15/22: fitting coefficients for force '/forceset/addmagDist_l'...
+[2026-02-18 11:35:47.115] [info] Thread 20/22: fitting coefficients for force '/forceset/glmed1_l'...
+[2026-02-18 11:35:47.115] [info] Thread 21/22: fitting coefficients for force '/forceset/glmin1_l'...
+[2026-02-18 11:35:47.114] [info] Thread 11/22: fitting coefficients for force '/forceset/sart_r'...
+[2026-02-18 11:35:47.145] [info] Thread 13/22: fitting coefficients for force '/forceset/vasint_r'...
+[2026-02-18 11:35:47.145] [info] Thread  4/22: fitting coefficients for force '/forceset/fdl_r'...
+[2026-02-18 11:35:47.145] [info] Thread 17/22: fitting coefficients for force '/forceset/ehl_l'...
+[2026-02-18 11:35:47.147] [info] Thread 14/22: fitting coefficients for force '/forceset/addbrev_l'...
+[2026-02-18 11:35:47.147] [info] Thread 18/22: fitting coefficients for force '/forceset/gaslat_l'...
+[2026-02-18 11:35:47.150] [info] Thread 12/22: fitting coefficients for force '/forceset/tfl_r'...
+[2026-02-18 11:35:47.151] [info] Thread  4/22: fitting coefficients for force '/forceset/fhl_r'...
+[2026-02-18 11:35:47.151] [info] Thread 17/22: fitting coefficients for force '/forceset/fdl_l'...
+[2026-02-18 11:35:47.153] [info] Thread 13/22: fitting coefficients for force '/forceset/vaslat_r'...
+[2026-02-18 11:35:47.182] [info] Thread  5/22: fitting coefficients for force '/forceset/gasmed_r'...
+[2026-02-18 11:35:47.836] [info] Thread 18/22: fitting coefficients for force '/forceset/gasmed_l'...
+[2026-02-18 11:35:48.446] [info] Thread  9/22: fitting coefficients for force '/forceset/perbrev_r'...
+[2026-02-18 11:35:48.459] [info] Thread  9/22: fitting coefficients for force '/forceset/perlong_r'...
+[2026-02-18 11:35:50.617] [info] Thread  1/22: fitting coefficients for force '/forceset/addlong_r'...
+[2026-02-18 11:35:52.130] [info] Thread 14/22: fitting coefficients for force '/forceset/addlong_l'...
+[2026-02-18 11:35:53.692] [info] Thread  2/22: fitting coefficients for force '/forceset/addmagMid_r'...
+[2026-02-18 11:35:53.772] [info] Thread 15/22: fitting coefficients for force '/forceset/addmagIsch_l'...
+[2026-02-18 11:35:54.649] [info] Thread  2/22: fitting coefficients for force '/forceset/addmagProx_r'...
+[2026-02-18 11:35:56.470] [info] Thread 16/22: fitting coefficients for force '/forceset/bflh_l'...
+[2026-02-18 11:36:00.177] [info] Thread 15/22: fitting coefficients for force '/forceset/addmagMid_l'...
+[2026-02-18 11:36:00.428] [info] Thread  1/22: fitting coefficients for force '/forceset/addmagDist_r'...
+[2026-02-18 11:36:05.012] [info] Thread 10/22: fitting coefficients for force '/forceset/psoas_r'...
+[2026-02-18 11:36:05.098] [info] Thread 10/22: fitting coefficients for force '/forceset/recfem_r'...
+[2026-02-18 11:36:06.773] [info] Thread 11/22: fitting coefficients for force '/forceset/semimem_r'...
+[2026-02-18 11:36:07.756] [info] Thread  8/22: fitting coefficients for force '/forceset/glmin3_r'...
+[2026-02-18 11:36:08.256] [info] Thread  3/22: fitting coefficients for force '/forceset/bfsh_r'...
+[2026-02-18 11:36:08.261] [info] Thread  3/22: fitting coefficients for force '/forceset/edl_r'...
+[2026-02-18 11:36:08.755] [info] Thread 22/22: fitting coefficients for force '/forceset/iliacus_l'...
+[2026-02-18 11:36:09.712] [info] Thread 22/22: fitting coefficients for force '/forceset/perbrev_l'...
+[2026-02-18 11:36:09.718] [info] Thread 22/22: fitting coefficients for force '/forceset/perlong_l'...
+[2026-02-18 11:36:09.724] [info] Thread 22/22: fitting coefficients for force '/forceset/piri_l'...
+[2026-02-18 11:36:10.147] [info] Thread  7/22: fitting coefficients for force '/forceset/glmed3_r'...
+[2026-02-18 11:36:11.670] [info] Thread  6/22: fitting coefficients for force '/forceset/glmax3_r'...
+[2026-02-18 11:36:12.561] [info] Thread 16/22: fitting coefficients for force '/forceset/bfsh_l'...
+[2026-02-18 11:36:14.057] [info] Thread 19/22: fitting coefficients for force '/forceset/glmax2_l'...
+[2026-02-18 11:36:14.329] [info] Thread  8/22: fitting coefficients for force '/forceset/grac_r'...
+[2026-02-18 11:36:15.810] [info] Thread 21/22: fitting coefficients for force '/forceset/glmin2_l'...
+[2026-02-18 11:36:15.898] [info] Thread  5/22: fitting coefficients for force '/forceset/glmax1_r'...
+[2026-02-18 11:36:16.115] [info] Thread 20/22: fitting coefficients for force '/forceset/glmed2_l'...
+[2026-02-18 11:36:16.732] [info] Thread 22/22: fitting coefficients for force '/forceset/psoas_l'...
+[2026-02-18 11:36:16.880] [info] Thread 22/22: fitting coefficients for force '/forceset/recfem_l'...
+[2026-02-18 11:36:17.536] [info] Thread  7/22: fitting coefficients for force '/forceset/glmin1_r'...
+[2026-02-18 11:36:17.726] [info] Thread 21/22: fitting coefficients for force '/forceset/glmin3_l'...
+[2026-02-18 11:36:17.881] [info] Thread  6/22: fitting coefficients for force '/forceset/glmed1_r'...
+[2026-02-18 11:36:18.070] [info] Thread 11/22: fitting coefficients for force '/forceset/semiten_r'...
+[2026-02-18 11:36:18.324] [info] Thread 19/22: fitting coefficients for force '/forceset/glmax3_l'...
+[2026-02-18 11:36:18.777] [info] Thread 20/22: fitting coefficients for force '/forceset/glmed3_l'...
+[2026-02-18 11:36:19.730] [info] Thread 22/22: fitting coefficients for force '/forceset/sart_l'...
+[2026-02-18 11:36:20.022] [info] Thread 12/22: fitting coefficients for force '/forceset/tibant_r'...
+[2026-02-18 11:36:20.897] [info] Thread 22/22: fitting coefficients for force '/forceset/semimem_l'...
+[2026-02-18 11:36:21.684] [info] Thread 22/22: fitting coefficients for force '/forceset/semiten_l'...
+[2026-02-18 11:36:22.435] [info] Thread 22/22: fitting coefficients for force '/forceset/soleus_l'...
+[2026-02-18 11:36:22.440] [info] Thread 22/22: fitting coefficients for force '/forceset/tfl_l'...
+[2026-02-18 11:36:24.154] [info] Thread 22/22: fitting coefficients for force '/forceset/tibant_l'...
+[2026-02-18 11:36:24.158] [info] Thread 22/22: fitting coefficients for force '/forceset/tibpost_l'...
+[2026-02-18 11:36:24.162] [info] Thread 22/22: fitting coefficients for force '/forceset/vasint_l'...
+[2026-02-18 11:36:24.166] [info] Thread 22/22: fitting coefficients for force '/forceset/vaslat_l'...
+[2026-02-18 11:36:24.170] [info] Thread 22/22: fitting coefficients for force '/forceset/vasmed_l'...
+[2026-02-18 11:36:24.175] [info] 
+[2026-02-18 11:36:24.175] [info] Step 8/9: Evaluate the fit.
+[2026-02-18 11:36:24.175] [info] ---------------------------
+[2026-02-18 11:36:24.175] [info] 
+[2026-02-18 11:36:24.175] [info] ---------------------------------------------------------------------
+[2026-02-18 11:36:24.175] [info]          path          |                polynomial fit               
+[2026-02-18 11:36:24.175] [info] ---------------------------------------------------------------------
+[2026-02-18 11:36:24.175] [info] /forceset/addbrev_r    | order = 5, dimension = 3, coefficients = 5
+[2026-02-18 11:36:24.175] [info] /forceset/addlong_r    | order = 5, dimension = 3, coefficients = 7
+[2026-02-18 11:36:24.175] [info] /forceset/addmagDist_r | order = 5, dimension = 3, coefficients = 6
+[2026-02-18 11:36:24.175] [info] /forceset/addmagIsch_r | order = 5, dimension = 3, coefficients = 6
+[2026-02-18 11:36:24.175] [info] /forceset/addmagMid_r  | order = 5, dimension = 3, coefficients = 3
+[2026-02-18 11:36:24.175] [info] /forceset/addmagProx_r | order = 5, dimension = 3, coefficients = 7
+[2026-02-18 11:36:24.175] [info] /forceset/bflh_r       | order = 5, dimension = 4, coefficients = 7
+[2026-02-18 11:36:24.175] [info] /forceset/bfsh_r       | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/edl_r        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/ehl_r        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/fdl_r        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/fhl_r        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/gaslat_r     | order = 5, dimension = 2, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/gasmed_r     | order = 5, dimension = 6, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/glmax1_r     | order = 5, dimension = 3, coefficients = 15
+[2026-02-18 11:36:24.176] [info] /forceset/glmax2_r     | order = 5, dimension = 3, coefficients = 12
+[2026-02-18 11:36:24.176] [info] /forceset/glmax3_r     | order = 5, dimension = 3, coefficients = 12
+[2026-02-18 11:36:24.176] [info] /forceset/glmed1_r     | order = 5, dimension = 3, coefficients = 16
+[2026-02-18 11:36:24.176] [info] /forceset/glmed2_r     | order = 5, dimension = 3, coefficients = 11
+[2026-02-18 11:36:24.176] [info] /forceset/glmed3_r     | order = 5, dimension = 3, coefficients = 12
+[2026-02-18 11:36:24.176] [info] /forceset/glmin1_r     | order = 5, dimension = 3, coefficients = 15
+[2026-02-18 11:36:24.176] [info] /forceset/glmin2_r     | order = 5, dimension = 3, coefficients = 10
+[2026-02-18 11:36:24.176] [info] /forceset/glmin3_r     | order = 5, dimension = 3, coefficients = 8
+[2026-02-18 11:36:24.176] [info] /forceset/grac_r       | order = 5, dimension = 4, coefficients = 9
+[2026-02-18 11:36:24.176] [info] /forceset/iliacus_r    | order = 5, dimension = 3, coefficients = 4
+[2026-02-18 11:36:24.176] [info] /forceset/perbrev_r    | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/perlong_r    | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/piri_r       | order = 5, dimension = 3, coefficients = 9
+[2026-02-18 11:36:24.176] [info] /forceset/psoas_r      | order = 5, dimension = 3, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/recfem_r     | order = 5, dimension = 4, coefficients = 7
+[2026-02-18 11:36:24.176] [info] /forceset/sart_r       | order = 5, dimension = 4, coefficients = 7
+[2026-02-18 11:36:24.176] [info] /forceset/semimem_r    | order = 5, dimension = 4, coefficients = 9
+[2026-02-18 11:36:24.176] [info] /forceset/semiten_r    | order = 5, dimension = 4, coefficients = 9
+[2026-02-18 11:36:24.176] [info] /forceset/soleus_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/tfl_r        | order = 5, dimension = 4, coefficients = 13
+[2026-02-18 11:36:24.176] [info] /forceset/tibant_r     | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/tibpost_r    | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/vasint_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/vaslat_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/vasmed_r     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/addbrev_l    | order = 5, dimension = 3, coefficients = 5
+[2026-02-18 11:36:24.176] [info] /forceset/addlong_l    | order = 5, dimension = 3, coefficients = 6
+[2026-02-18 11:36:24.176] [info] /forceset/addmagDist_l | order = 5, dimension = 3, coefficients = 6
+[2026-02-18 11:36:24.176] [info] /forceset/addmagIsch_l | order = 5, dimension = 3, coefficients = 6
+[2026-02-18 11:36:24.176] [info] /forceset/addmagMid_l  | order = 5, dimension = 3, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/addmagProx_l | order = 5, dimension = 3, coefficients = 7
+[2026-02-18 11:36:24.176] [info] /forceset/bflh_l       | order = 5, dimension = 4, coefficients = 7
+[2026-02-18 11:36:24.176] [info] /forceset/bfsh_l       | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/edl_l        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/ehl_l        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/fdl_l        | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/fhl_l        | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/gaslat_l     | order = 5, dimension = 2, coefficients = 4
+[2026-02-18 11:36:24.176] [info] /forceset/gasmed_l     | order = 5, dimension = 6, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/glmax1_l     | order = 5, dimension = 3, coefficients = 13
+[2026-02-18 11:36:24.176] [info] /forceset/glmax2_l     | order = 5, dimension = 3, coefficients = 12
+[2026-02-18 11:36:24.176] [info] /forceset/glmax3_l     | order = 5, dimension = 3, coefficients = 12
+[2026-02-18 11:36:24.176] [info] /forceset/glmed1_l     | order = 5, dimension = 3, coefficients = 14
+[2026-02-18 11:36:24.176] [info] /forceset/glmed2_l     | order = 5, dimension = 3, coefficients = 11
+[2026-02-18 11:36:24.176] [info] /forceset/glmed3_l     | order = 5, dimension = 3, coefficients = 13
+[2026-02-18 11:36:24.176] [info] /forceset/glmin1_l     | order = 5, dimension = 3, coefficients = 13
+[2026-02-18 11:36:24.176] [info] /forceset/glmin2_l     | order = 5, dimension = 3, coefficients = 9
+[2026-02-18 11:36:24.176] [info] /forceset/glmin3_l     | order = 5, dimension = 3, coefficients = 8
+[2026-02-18 11:36:24.176] [info] /forceset/grac_l       | order = 5, dimension = 4, coefficients = 7
+[2026-02-18 11:36:24.176] [info] /forceset/iliacus_l    | order = 5, dimension = 3, coefficients = 4
+[2026-02-18 11:36:24.176] [info] /forceset/perbrev_l    | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/perlong_l    | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/piri_l       | order = 5, dimension = 3, coefficients = 10
+[2026-02-18 11:36:24.176] [info] /forceset/psoas_l      | order = 5, dimension = 3, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/recfem_l     | order = 5, dimension = 4, coefficients = 7
+[2026-02-18 11:36:24.176] [info] /forceset/sart_l       | order = 5, dimension = 4, coefficients = 8
+[2026-02-18 11:36:24.176] [info] /forceset/semimem_l    | order = 5, dimension = 4, coefficients = 8
+[2026-02-18 11:36:24.176] [info] /forceset/semiten_l    | order = 5, dimension = 4, coefficients = 8
+[2026-02-18 11:36:24.176] [info] /forceset/soleus_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/tfl_l        | order = 5, dimension = 4, coefficients = 13
+[2026-02-18 11:36:24.176] [info] /forceset/tibant_l     | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/tibpost_l    | order = 5, dimension = 1, coefficients = 2
+[2026-02-18 11:36:24.176] [info] /forceset/vasint_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/vaslat_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] /forceset/vasmed_l     | order = 5, dimension = 1, coefficients = 3
+[2026-02-18 11:36:24.176] [info] ---------------------------------------------------------------------
+[2026-02-18 11:36:24.176] [info] 
+[2026-02-18 11:36:24.176] [info] Computing path lengths and moment arms from the fitted paths...
+[2026-02-18 11:36:24.252] [info] Thread  1/22: computing values for times 0.00-5.00 seconds...
+[2026-02-18 11:36:24.263] [info] Thread  3/22: computing values for times 12.00-17.00 seconds...
+[2026-02-18 11:36:24.264] [info] Thread  4/22: computing values for times 18.00-23.00 seconds...
+[2026-02-18 11:36:24.265] [info] Thread  6/22: computing values for times 30.00-35.00 seconds...
+[2026-02-18 11:36:24.267] [info] Thread  2/22: computing values for times 6.00-11.00 seconds...
+[2026-02-18 11:36:24.269] [info] Thread  7/22: computing values for times 36.00-41.00 seconds...
+[2026-02-18 11:36:24.276] [info] Thread  5/22: computing values for times 24.00-29.00 seconds...
+[2026-02-18 11:36:24.281] [info] Thread  8/22: computing values for times 42.00-47.00 seconds...
+[2026-02-18 11:36:24.283] [info] Thread 10/22: computing values for times 54.00-59.00 seconds...
+[2026-02-18 11:36:24.290] [info] Thread  9/22: computing values for times 48.00-53.00 seconds...
+[2026-02-18 11:36:24.291] [info] Thread 12/22: computing values for times 66.00-71.00 seconds...
+[2026-02-18 11:36:24.300] [info] Thread 11/22: computing values for times 60.00-65.00 seconds...
+[2026-02-18 11:36:24.303] [info] Thread 14/22: computing values for times 78.00-83.00 seconds...
+[2026-02-18 11:36:24.310] [info] Thread 15/22: computing values for times 84.00-89.00 seconds...
+[2026-02-18 11:36:24.311] [info] Thread 13/22: computing values for times 72.00-77.00 seconds...
+[2026-02-18 11:36:24.316] [info] Thread 16/22: computing values for times 90.00-95.00 seconds...
+[2026-02-18 11:36:24.321] [info] Thread 17/22: computing values for times 96.00-101.00 seconds...
+[2026-02-18 11:36:24.333] [info] Thread 18/22: computing values for times 102.00-107.00 seconds...
+[2026-02-18 11:36:24.333] [info] Thread 19/22: computing values for times 108.00-113.00 seconds...
+[2026-02-18 11:36:24.339] [info] Thread 20/22: computing values for times 114.00-119.00 seconds...
+[2026-02-18 11:36:24.351] [info] Thread 22/22: computing values for times 126.00-149.00 seconds...
+[2026-02-18 11:36:24.358] [info] Thread 21/22: computing values for times 120.00-125.00 seconds...
+[2026-02-18 11:36:24.709] [info] Thread  1/22: computing values for times 0.00-6.42 seconds...
+[2026-02-18 11:36:24.712] [info] Thread  2/22: computing values for times 6.50-13.42 seconds...
+[2026-02-18 11:36:24.725] [info] Thread  3/22: computing values for times 13.50-19.67 seconds...
+[2026-02-18 11:36:24.728] [info] Thread  7/22: computing values for times 40.50-46.67 seconds...
+[2026-02-18 11:36:24.729] [info] Thread  4/22: computing values for times 19.75-26.17 seconds...
+[2026-02-18 11:36:24.731] [info] Thread  8/22: computing values for times 46.75-53.33 seconds...
+[2026-02-18 11:36:24.732] [info] Thread  5/22: computing values for times 26.25-33.08 seconds...
+[2026-02-18 11:36:24.733] [info] Thread  9/22: computing values for times 53.42-59.58 seconds...
+[2026-02-18 11:36:24.735] [info] Thread  6/22: computing values for times 33.17-40.33 seconds...
+[2026-02-18 11:36:24.740] [info] Thread 11/22: computing values for times 66.50-73.00 seconds...
+[2026-02-18 11:36:24.749] [info] Thread 10/22: computing values for times 59.67-66.42 seconds...
+[2026-02-18 11:36:24.756] [info] Thread 13/22: computing values for times 80.00-87.50 seconds...
+[2026-02-18 11:36:24.759] [info] Thread 12/22: computing values for times 73.08-79.83 seconds...
+[2026-02-18 11:36:24.774] [info] Thread 15/22: computing values for times 95.58-101.83 seconds...
+[2026-02-18 11:36:24.776] [info] Thread 14/22: computing values for times 87.75-95.42 seconds...
+[2026-02-18 11:36:24.779] [info] Thread 16/22: computing values for times 102.00-108.25 seconds...
+[2026-02-18 11:36:24.785] [info] Thread 17/22: computing values for times 108.33-114.58 seconds...
+[2026-02-18 11:36:24.791] [info] Thread 18/22: computing values for times 114.67-121.08 seconds...
+[2026-02-18 11:36:24.798] [info] Thread 19/22: computing values for times 121.17-127.50 seconds...
+[2026-02-18 11:36:24.823] [info] Thread 20/22: computing values for times 127.58-133.75 seconds...
+[2026-02-18 11:36:24.846] [info] Thread 21/22: computing values for times 133.83-140.58 seconds...
+[2026-02-18 11:36:24.864] [info] Thread 22/22: computing values for times 140.67-149.00 seconds...
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] Summary of path length and moment arm RMS errors
+[2026-02-18 11:36:36.213] [info] ------------------------------------------------
+[2026-02-18 11:36:36.213] [info] '/forceset/addbrev_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.133 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_flexion_r' moment arm RMSE: 0.354 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_adduction_r' moment arm RMSE: 0.278 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_rotation_r' moment arm RMSE: 0.393 cm
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] '/forceset/addlong_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.148 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_flexion_r' moment arm RMSE: 0.321 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_adduction_r' moment arm RMSE: 0.419 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_rotation_r' moment arm RMSE: 0.104 cm
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] '/forceset/addmagDist_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.120 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_flexion_r' moment arm RMSE: 0.332 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_adduction_r' moment arm RMSE: 0.342 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_rotation_r' moment arm RMSE: 0.144 cm
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] '/forceset/addmagIsch_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.187 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_flexion_r' moment arm RMSE: 0.340 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_adduction_r' moment arm RMSE: 0.385 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_rotation_r' moment arm RMSE: 0.378 cm
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] '/forceset/addmagMid_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.164 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_flexion_r' moment arm RMSE: 0.368 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_adduction_r' moment arm RMSE: 0.482 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_rotation_r' moment arm RMSE: 0.301 cm
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] '/forceset/addmagProx_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.122 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_flexion_r' moment arm RMSE: 0.395 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_adduction_r' moment arm RMSE: 0.234 cm
+[2026-02-18 11:36:36.213] [info]  - 'hip_rotation_r' moment arm RMSE: 0.225 cm
+[2026-02-18 11:36:36.213] [info] 
+[2026-02-18 11:36:36.213] [info] '/forceset/bflh_r' path errors:
+[2026-02-18 11:36:36.213] [info]  - path length RMSE: 0.177 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.361 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.259 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.346 cm
+[2026-02-18 11:36:36.214] [info]  - 'knee_angle_r' moment arm RMSE: 0.323 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/bfsh_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.088 cm
+[2026-02-18 11:36:36.214] [info]  - 'knee_angle_r' moment arm RMSE: 0.486 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/edl_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.055 cm
+[2026-02-18 11:36:36.214] [info]  - 'ankle_angle_r' moment arm RMSE: 0.307 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/ehl_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.059 cm
+[2026-02-18 11:36:36.214] [info]  - 'ankle_angle_r' moment arm RMSE: 0.304 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/fdl_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.141 cm
+[2026-02-18 11:36:36.214] [info]  - 'ankle_angle_r' moment arm RMSE: 0.362 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/fhl_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.090 cm
+[2026-02-18 11:36:36.214] [info]  - 'ankle_angle_r' moment arm RMSE: 0.498 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/gaslat_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.169 cm
+[2026-02-18 11:36:36.214] [info]  - 'knee_angle_r' moment arm RMSE: 0.175 cm
+[2026-02-18 11:36:36.214] [info]  - 'ankle_angle_r' moment arm RMSE: 0.412 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/gasmed_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.381 cm
+[2026-02-18 11:36:36.214] [info]  - 'pelvis_tilt' moment arm RMSE: 0.032 cm
+[2026-02-18 11:36:36.214] [info]  - 'pelvis_list' moment arm RMSE: 0.027 cm
+[2026-02-18 11:36:36.214] [info]  - 'pelvis_rotation' moment arm RMSE: 0.023 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.033 cm
+[2026-02-18 11:36:36.214] [info]  - 'knee_angle_r' moment arm RMSE: 0.498 cm
+[2026-02-18 11:36:36.214] [info]  - 'ankle_angle_r' moment arm RMSE: 0.360 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmax1_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.100 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.313 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.314 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.423 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmax2_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.130 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.443 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.367 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.395 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmax3_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.111 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.242 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.470 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.376 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmed1_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.124 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.444 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.496 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.479 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmed2_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.138 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.461 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.382 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.422 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmed3_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.118 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.438 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.256 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.460 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmin1_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.121 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.424 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.396 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.434 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmin2_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.119 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.370 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.363 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.457 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/glmin3_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.166 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.365 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.470 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.420 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/grac_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.108 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.184 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_adduction_r' moment arm RMSE: 0.166 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_rotation_r' moment arm RMSE: 0.206 cm
+[2026-02-18 11:36:36.214] [info]  - 'knee_angle_r' moment arm RMSE: 0.377 cm
+[2026-02-18 11:36:36.214] [info] 
+[2026-02-18 11:36:36.214] [info] '/forceset/iliacus_r' path errors:
+[2026-02-18 11:36:36.214] [info]  - path length RMSE: 0.169 cm
+[2026-02-18 11:36:36.214] [info]  - 'hip_flexion_r' moment arm RMSE: 0.229 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.470 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.098 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/perbrev_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.053 cm
+[2026-02-18 11:36:36.215] [info]  - 'ankle_angle_r' moment arm RMSE: 0.291 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/perlong_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.044 cm
+[2026-02-18 11:36:36.215] [info]  - 'ankle_angle_r' moment arm RMSE: 0.243 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/piri_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.141 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.444 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.266 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.478 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/psoas_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.181 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.415 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.398 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.319 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/recfem_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.154 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.307 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.435 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.227 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.420 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/sart_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.180 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.339 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.491 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.333 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.253 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/semimem_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.120 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.107 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.201 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.178 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.491 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/semiten_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.130 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.379 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.317 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.280 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.086 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/soleus_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.051 cm
+[2026-02-18 11:36:36.215] [info]  - 'ankle_angle_r' moment arm RMSE: 0.269 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/tfl_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.124 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_r' moment arm RMSE: 0.311 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_r' moment arm RMSE: 0.395 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_r' moment arm RMSE: 0.357 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.088 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/tibant_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.073 cm
+[2026-02-18 11:36:36.215] [info]  - 'ankle_angle_r' moment arm RMSE: 0.365 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/tibpost_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.076 cm
+[2026-02-18 11:36:36.215] [info]  - 'ankle_angle_r' moment arm RMSE: 0.416 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/vasint_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.086 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.452 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/vaslat_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.091 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.473 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/vasmed_r' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.093 cm
+[2026-02-18 11:36:36.215] [info]  - 'knee_angle_r' moment arm RMSE: 0.479 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/addbrev_l' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.139 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_l' moment arm RMSE: 0.406 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_l' moment arm RMSE: 0.282 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_l' moment arm RMSE: 0.393 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/addlong_l' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.219 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_l' moment arm RMSE: 0.396 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_l' moment arm RMSE: 0.460 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_l' moment arm RMSE: 0.428 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/addmagDist_l' path errors:
+[2026-02-18 11:36:36.215] [info]  - path length RMSE: 0.110 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_flexion_l' moment arm RMSE: 0.241 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_adduction_l' moment arm RMSE: 0.431 cm
+[2026-02-18 11:36:36.215] [info]  - 'hip_rotation_l' moment arm RMSE: 0.142 cm
+[2026-02-18 11:36:36.215] [info] 
+[2026-02-18 11:36:36.215] [info] '/forceset/addmagIsch_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.190 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.361 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.346 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.401 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/addmagMid_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.169 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.380 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.436 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.320 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/addmagProx_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.131 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.449 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.229 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.230 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/bflh_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.168 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.391 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.232 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.330 cm
+[2026-02-18 11:36:36.216] [info]  - 'knee_angle_l' moment arm RMSE: 0.323 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/bfsh_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.054 cm
+[2026-02-18 11:36:36.216] [info]  - 'knee_angle_l' moment arm RMSE: 0.333 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/edl_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.058 cm
+[2026-02-18 11:36:36.216] [info]  - 'ankle_angle_l' moment arm RMSE: 0.327 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/ehl_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.059 cm
+[2026-02-18 11:36:36.216] [info]  - 'ankle_angle_l' moment arm RMSE: 0.304 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/fdl_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.090 cm
+[2026-02-18 11:36:36.216] [info]  - 'ankle_angle_l' moment arm RMSE: 0.225 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/fhl_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.004 cm
+[2026-02-18 11:36:36.216] [info]  - 'ankle_angle_l' moment arm RMSE: 0.022 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/gaslat_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.165 cm
+[2026-02-18 11:36:36.216] [info]  - 'knee_angle_l' moment arm RMSE: 0.158 cm
+[2026-02-18 11:36:36.216] [info]  - 'ankle_angle_l' moment arm RMSE: 0.274 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/gasmed_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.378 cm
+[2026-02-18 11:36:36.216] [info]  - 'pelvis_tilt' moment arm RMSE: 0.038 cm
+[2026-02-18 11:36:36.216] [info]  - 'pelvis_list' moment arm RMSE: 0.031 cm
+[2026-02-18 11:36:36.216] [info]  - 'pelvis_rotation' moment arm RMSE: 0.034 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.038 cm
+[2026-02-18 11:36:36.216] [info]  - 'knee_angle_l' moment arm RMSE: 0.468 cm
+[2026-02-18 11:36:36.216] [info]  - 'ankle_angle_l' moment arm RMSE: 0.460 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmax1_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.133 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.483 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.332 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.483 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmax2_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.118 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.446 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.331 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.368 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmax3_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.127 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.240 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.483 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.400 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmed1_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.130 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.404 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.467 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.432 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmed2_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.119 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.410 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.348 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.392 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmed3_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.125 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.448 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.270 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.422 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmin1_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.145 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.496 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.417 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.449 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmin2_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.137 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_flexion_l' moment arm RMSE: 0.392 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_adduction_l' moment arm RMSE: 0.371 cm
+[2026-02-18 11:36:36.216] [info]  - 'hip_rotation_l' moment arm RMSE: 0.450 cm
+[2026-02-18 11:36:36.216] [info] 
+[2026-02-18 11:36:36.216] [info] '/forceset/glmin3_l' path errors:
+[2026-02-18 11:36:36.216] [info]  - path length RMSE: 0.165 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.378 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.465 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.426 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/grac_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.217 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.166 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.492 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.474 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.315 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/iliacus_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.149 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.227 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.449 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.101 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/perbrev_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.061 cm
+[2026-02-18 11:36:36.217] [info]  - 'ankle_angle_l' moment arm RMSE: 0.336 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/perlong_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.052 cm
+[2026-02-18 11:36:36.217] [info]  - 'ankle_angle_l' moment arm RMSE: 0.288 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/piri_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.138 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.430 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.249 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.440 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/psoas_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.164 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.377 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.376 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.334 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/recfem_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.133 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.324 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.460 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.216 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.279 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/sart_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.175 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.342 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.262 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.352 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.218 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/semimem_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.119 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.343 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.173 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.168 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.399 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/semiten_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.141 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.409 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.273 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.252 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.409 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/soleus_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.044 cm
+[2026-02-18 11:36:36.217] [info]  - 'ankle_angle_l' moment arm RMSE: 0.243 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/tfl_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.131 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_flexion_l' moment arm RMSE: 0.335 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_adduction_l' moment arm RMSE: 0.436 cm
+[2026-02-18 11:36:36.217] [info]  - 'hip_rotation_l' moment arm RMSE: 0.343 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.082 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/tibant_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.067 cm
+[2026-02-18 11:36:36.217] [info]  - 'ankle_angle_l' moment arm RMSE: 0.342 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/tibpost_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.128 cm
+[2026-02-18 11:36:36.217] [info]  - 'ankle_angle_l' moment arm RMSE: 0.321 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/vasint_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.053 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.301 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/vaslat_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.064 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.363 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] '/forceset/vasmed_l' path errors:
+[2026-02-18 11:36:36.217] [info]  - path length RMSE: 0.059 cm
+[2026-02-18 11:36:36.217] [info]  - 'knee_angle_l' moment arm RMSE: 0.327 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] Average path length RMSE = 0.126 cm
+[2026-02-18 11:36:36.217] [info] Average moment arm RMSE  = 0.334 cm
+[2026-02-18 11:36:36.217] [info] 
+[2026-02-18 11:36:36.217] [info] Step 9/9: Print the results to the output directory.
+[2026-02-18 11:36:36.217] [info] ----------------------------------------------------
+[2026-02-18 11:36:36.217] [info] Printing the FunctionBasedPaths to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_FunctionBasedPathSet.xml'...
+[2026-02-18 11:36:36.219] [info] 
+[2026-02-18 11:36:36.219] [info] Printing original coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_coordinate_values.sto'...
+[2026-02-18 11:36:36.221] [info] Printing sampled coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_coordinate_values_sampled.sto'...
+[2026-02-18 11:36:36.232] [info] 
+[2026-02-18 11:36:36.232] [info] Printing the path lengths to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths.sto'...
+[2026-02-18 11:36:36.235] [info] Printing the moment arms to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms.sto'...
+[2026-02-18 11:36:36.243] [info] 
+[2026-02-18 11:36:36.243] [info] Printing the sampled path lengths to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths_sampled.sto'...
+[2026-02-18 11:36:36.273] [info] Printing the sampled moment arms to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms_sampled.sto'...
+[2026-02-18 11:36:36.347] [info] 
+[2026-02-18 11:36:36.347] [info] Printing the fitted path lengths from the original coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths_fitted.sto'...
+[2026-02-18 11:36:36.350] [info] Printing the fitted moment arms from the original coordinate to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms_fitted.sto'...
+[2026-02-18 11:36:36.357] [info] 
+[2026-02-18 11:36:36.357] [info] Printing the fitted path lengths from the sampled coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_path_lengths_sampled_fitted.sto'...
+[2026-02-18 11:36:36.385] [info] Printing the fitted moment arms from the sampled coordinate values to '/home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/function_based_paths/optimized_scale_and_markers_moment_arms_sampled_fitted.sto'...
+[2026-02-18 11:46:50.144] [info] Loaded model optimized_scale_and_markers from file /home/alexbeat/AlexDev/AddBiomechanics/server/engine/tests/data/kfb-test/osim_results/Moco/walking_segment_0_moco.osim
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'sacrum.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_femur.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_tibia.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_fibula.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_patella.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_talus.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_foot.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_femur.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_tibia.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_fibula.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_patella.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_talus.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_foot.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'hat_spine.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'hat_skull.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'humerus_rv.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'ulna_rv.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'radius_rv.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'pisiform_rvs.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'lunate_rvs.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'scaphoid_rvs.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'triquetrum_rvs.vtp'.
+[2026-02-18 11:46:50.145] [warning] Couldn't find file 'hamate_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'capitate_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'trapezoid_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'trapezium_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal2_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'index_proximal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'index_medial_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'index_distal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal3_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'middle_proximal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'middle_medial_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'middle_distal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal4_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ring_proximal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ring_medial_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ring_distal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal5_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'little_proximal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'little_medial_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'little_distal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal1_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'thumb_proximal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'thumb_distal_rvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'humerus_lv.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ulna_lv.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'radius_lv.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'pisiform_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'lunate_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'scaphoid_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'triquetrum_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'hamate_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'capitate_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'trapezoid_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'trapezium_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal2_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'index_proximal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'index_medial_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'index_distal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal3_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'middle_proximal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'middle_medial_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'middle_distal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal4_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ring_proximal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ring_medial_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'ring_distal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal5_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'little_proximal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'little_medial_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'little_distal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'metacarpal1_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'thumb_proximal_lvs.vtp'.
+[2026-02-18 11:46:50.146] [warning] Couldn't find file 'thumb_distal_lvs.vtp'.
+[2026-02-18 11:46:50.153] [info] ExternalForce::ForcePlate_calcn_r Data source being set to 
+[2026-02-18 11:46:50.153] [info] ExternalForce::ForcePlate_calcn_l Data source being set to 
+[2026-02-18 11:46:50.446] [info] ExternalForce::ForcePlate_calcn_r Data source being set to 
+[2026-02-18 11:46:50.446] [info] ExternalForce::ForcePlate_calcn_l Data source being set to 
