@@ -17,8 +17,8 @@
   "runMoco": true,
   "trialRanges": {
     "walking": [
-      25.0,
-      30.0
+      23.9,
+      24.8
     ]
   }
 }
