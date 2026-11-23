@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-TEST_NAME="kfb-test"
+TEST_NAME="smpl_09"
 
 CURR_DIR=`pwd`
 echo $CURR_DIR

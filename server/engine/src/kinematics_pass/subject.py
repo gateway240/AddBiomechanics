@@ -592,7 +592,7 @@ class Subject(metaclass=ExceptionHandlingMeta):
         marker_fitter.setRegularizePelvisJointsWithVirtualSpring(0.1)
 
         # # TODO: Remove me
-        marker_fitter.setIterationLimit(20)
+        # marker_fitter.setIterationLimit(500)
 
         # 2.3. Run the kinematics pipeline.
 

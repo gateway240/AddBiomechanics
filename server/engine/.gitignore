@@ -2,4 +2,8 @@ venv
 .pytest_cache
 **/.DS_Store
 tests/data/kfb-test
+tests/data/smpl_test
+tests/data/smpl_09
+tests/data/smpl_09_bsm
+osim_results
 *.egg-info
