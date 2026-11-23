@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-TEST_NAME="smpl_09"
+TEST_NAME="opencap_test"
 
 CURR_DIR=`pwd`
 echo $CURR_DIR
